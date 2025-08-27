@@ -101,6 +101,41 @@ def get_exinfomation(args, scores):
             json.dump(final_ans, file, indent=4)
         print(f"Data has been written to {filename}")
 
+def get_exrank(args, scores):
+    query_dataset = TextDataset(args, None, "text", args.query_data_file)
+    code_dataset = TextDataset(args, None, "text", args.code_data_file)
+
+    nl_urls = []
+    for ex in query_dataset:
+        nl_urls.append(ex['url'])
+    code_urls = []
+    for ex in code_dataset:
+        code_urls.append(ex['url'])
+
+    nl_scores = scores
+    code_scores = scores.T
+
+    code_sort_ids = np.argsort(code_scores, axis=-1, kind='quicksort', order=None)[:, ::-1]
+    nl_sort_ids = np.argsort(nl_scores, axis=-1, kind='quicksort', order=None)[:, ::-1]
+    nl_sort = np.sort(nl_scores, axis=-1)[:, ::-1]
+
+    nl_scores_p = [[nl_sort[r][c] + 1 * 1 * (1.0 / (np.where(code_sort_ids[nl_sort_ids[r][c]] == r)[0][0] + 1)) / 5.0 for c in range(nl_scores.shape[1])] for r in range(nl_scores.shape[0])]
+
+    nl_sort_ids_p = np.argsort(nl_scores_p, axis=-1, kind='quicksort', order=None)[:, ::-1]
+    nl_sort_urls = [[code_urls[nl_sort_ids[r][nl_sort_ids_p[r][c]]] for c in range(nl_sort_ids_p.shape[1])] for r in range(nl_sort_ids_p.shape[0])]
+  
+    mrrs = metric.cal_mrr(nl_sort_urls, nl_urls)
+    recalls = metric.cal_recall(nl_sort_urls, nl_urls)
+    mrrs = [round(float(r), 3) for r in list(mrrs.values())]
+    # mrr10 mrr1000, hr1,hr5, hr10
+    mrrs = [mrrs[5]]
+    recalls = [round(float(r), 3) for r in list(recalls.values())][:3]
+    res = mrrs + recalls
+
+    title = ["MRR", "Top-1", "Top-5", "Top-10"]
+    result_table = ResultTable(title)
+    result_table.add_row(res)
+    result_table.print_table()
 
 def evaluate(args,query2code_scores,query2comment_scores, code2code_scores, gendes2code_scores=None):
     if args.mode == 'eval':
@@ -406,10 +441,12 @@ if __name__ == '__main__':
         scores_4 = global_query_4 @ global_target_4.T
         scores_5 = global_query_5 @ global_target_5.T
 
-        # scores = scores_1 * 0.4 + scores_2 * 0.25 + scores_4 * 0.00 + scores_5 * 0.35
+        scores = scores_1 * 0.4 + scores_2 * 0.25 + scores_4 * 0.00 + scores_5 * 0.35
 
         # get_exinfomation(args, scores)
 
         # evaluate(args, scores, None, None)
+        
         evaluate(args, scores_1, scores_2, scores_5)
+        get_exrank(args, scores)
 
