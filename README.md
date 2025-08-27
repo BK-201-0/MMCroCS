@@ -1,4 +1,4 @@
-# Hybrid-CS
+# MMCroCS
 ### Project Structure
 ```bash
 -data # datasets and generated data
