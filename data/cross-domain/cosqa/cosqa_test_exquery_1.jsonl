@@ -1,0 +1,2002 @@
+[
+    {
+        "nl_input": "The query requires a Python function to sort tokens within a string. The function should split the string into tokens, sort them, and rejoin them into a single sorted string. The sorting should be based on standard lexicographical order, with optional handling for numeric values to ensure natural sorting behavior.",
+        "url": 4833
+    },
+    {
+        "nl_input": "The query seeks to determine whether a file is read-only in Python. It requires checking the file's permissions to verify if writing is disabled, using OS-level operations like `os.stat()` and `os.chmod()`. The solution should evaluate the file's mode, mask out write permissions, and confirm if only read access is available.",
+        "url": 2445
+    },
+    {
+        "nl_input": "The query seeks to declare an empty NumPy array in Python, particularly focusing on a function that creates an empty array with specified frame and channel dimensions, supporting both 1D and 2D configurations. The implementation uses NumPy's `empty` function with proper shape and data type handling.",
+        "url": 4923
+    },
+    {
+        "nl_input": "The query seeks to determine whether a given item is iterable but explicitly excludes strings (and sometimes bytes or tuples) from being considered iterable. It aims to distinguish between iterable data types and string types in Python.",
+        "url": 1640
+    },
+    {
+        "nl_input": "The query requires a Python function that iterates over the results of a query and prints specific attributes, including identifiers and group information. The output should follow a format displaying fields like end time, experiment name, project name, experiment group, and run group for each result tuple.",
+        "url": 4258
+    },
+    {
+        "nl_input": "The query seeks to understand how to save the header of a FITS file in Python when exporting data. The relevant code demonstrates creating a PrimaryHDU object, assigning the header to it, and writing it to a file using `hdulist.writeto`.",
+        "url": 1138
+    },
+    {
+        "nl_input": "The query requires a function to align a given length or position to a specific boundary, typically by calculating the adjusted value based on modulo arithmetic. It is useful in scenarios involving memory or file alignment, page boundaries, or data structure padding. The alignment ensures that values are adjusted to meet specific size constraints or boundaries.",
+        "url": 6173
+    },
+    {
+        "nl_input": "The query requires a function to convert an input array into a NumPy array of float type. It emphasizes handling data as floating-point values, potentially involving type conversion and ensuring compatibility with NumPy\u2019s array structure.",
+        "url": 854
+    },
+    {
+        "nl_input": "The query seeks a Python function that replaces occurrences of multiple substrings in a given string. It requires a function that takes an input string and a collection of substrings to replace, then returns the modified string with all specified replacements performed efficiently.",
+        "url": 5637
+    },
+    {
+        "nl_input": "The query requires a Python function to verify that all items in a given list are integers. The desired functionality includes checking whether the input is an iterable and confirming each element's type as an integer, returning `True` if all elements are integers and `False` otherwise. This can be achieved by combining iterable and integer checks across the collection.",
+        "url": 1613
+    },
+    {
+        "nl_input": "To save a variable to a text file in Python, you can write the variable's contents into a file using functions that open the file in write mode and utilize methods like `print()` or `write()`. The provided codes demonstrate approaches for saving text-based data to files.",
+        "url": 1135
+    },
+    {
+        "nl_input": "To skip an index in a for loop in Python, you can use conditional checks within the loop to bypass specific indices. For example, using `enumerate()` to track the index and `continue` to skip processing at a particular index meets this requirement.",
+        "url": 2047
+    },
+    {
+        "nl_input": "The query seeks to create a tokenization code in Python. It explores functions that process input text or strings, applying tokenization techniques using libraries like `tokenize` or custom regex patterns, and returning tokens as lists or objects. The focus is on splitting text into meaningful units (tokens) for further natural language processing or analysis tasks.",
+        "url": 4516
+    },
+    {
+        "nl_input": "The query seeks Python functions that demonstrate raising exceptions without parentheses. The provided code includes examples where `raise` is used without parentheses, such as `raise self`, `raise`, and `raise exception`. These illustrate different scenarios of exception raising, including re-raising an existing exception, raising a constructed exception, and asserting that a function raises a specific exception type.",
+        "url": 6088
+    },
+    {
+        "nl_input": "To separate a list with commas in Python, you can convert the list elements to strings and join them using `','.join()`. If starting with a comma-separated string, use `.split(',')` to create a list. The process involves handling data types (string to list or list to string) and ensuring proper formatting with commas.",
+        "url": 3842
+    },
+    {
+        "nl_input": "The query seeks to understand how to handle return values when invoking asynchronous functions in Python. It explores mechanisms for retrieving results from async calls, particularly focusing on execution within threads or event loops and the synchronization required to obtain returned data.",
+        "url": 318
+    },
+    {
+        "nl_input": "The query asks how to convert seconds into a time format in Python. The desired solution should take a number of seconds and convert it into hours, minutes, seconds, and microseconds, likely returning a time object with these components.",
+        "url": 3713
+    },
+    {
+        "nl_input": "The query seeks to understand how to cast boolean values (True/False) to numbers in Python. The referenced code includes functions that convert boolean values from various string representations (e.g., \"true\", \"yes\", \"1\") to their corresponding boolean equivalents, which can then be cast to integers (1 or 0) implicitly or explicitly.",
+        "url": 1299
+    },
+    {
+        "nl_input": "The query requires a Python function to add milliseconds to a datetime object. The provided code includes functions for converting milliseconds to a datetime and calculating milliseconds from a timedelta, which can be used to manipulate datetime objects by adding milliseconds.",
+        "url": 115
+    },
+    {
+        "nl_input": "The query asks how to read the last `n` lines of a file in Python. The provided code snippets are not ideal for this task, as they involve custom classes or do not directly address reading from the end of a file. A suitable solution would involve efficiently accessing the last `n` lines using standard file handling or libraries like `collections.deque`.",
+        "url": 2729
+    },
+    {
+        "nl_input": "The query requires a Python function to retrieve the list of column names from a specified MySQL table. The function should connect to the database, execute a query to obtain column information, and return only the column names.",
+        "url": 277
+    },
+    {
+        "nl_input": "To extract the domain part of a URL in Python, use a function that parses the URL and retrieves the 'netloc' component, optionally removing any port number. This can be achieved using `urlparse` from `urllib.parse`.",
+        "url": 5694
+    },
+    {
+        "nl_input": "The query seeks a Python function to flatten a nested dictionary. The desired function should recursively merge keys from nested dictionaries into a single level dictionary, using a specified join symbol (e.g., a space) to concatenate keys. It should handle varying levels of nesting and produce a flat dictionary with joined key names and corresponding values.",
+        "url": 5724
+    },
+    {
+        "nl_input": "The query seeks to understand how session management is implemented in Python, particularly focusing on setting and retrieving session data. It references methods for assigning session keys, accessing session values, and handling session lifecycle operations.",
+        "url": 2346
+    },
+    {
+        "nl_input": "The query requires functionality to save a graph into a file using Python. The provided code examples include writing a graph to a DOT file, plotting and saving a graph as an image, and reading a graph from a DOT file. The main requirement is to handle graph data and persist it into a file, either in DOT format or as a visual image file.",
+        "url": 3702
+    },
+    {
+        "nl_input": "To remove a file in Python on Windows, the code should first check if the path is a file, then use `os.chmod` to set appropriate permissions (like 0o777) to ensure the file is writable, and finally call `os.remove` to delete it. This approach ensures compatibility with Windows file permission handling.",
+        "url": 4551
+    },
+    {
+        "nl_input": "The query requires a Python function that adds a suffix to a filename before its extension. The function should split the filename into name and extension parts, insert the suffix between them, and return the modified filename.",
+        "url": 2100
+    },
+    {
+        "nl_input": "The query seeks to determine how to check if a Python object is iterable, excluding strings and possibly other non-iterable types. It explores multiple implementations that use checks like `hasattr(obj, \"__iter__\")` or `isinstance(item, collections.Iterable)`, while explicitly excluding strings, bytes, or tuples from being considered as valid iterables.",
+        "url": 1640
+    },
+    {
+        "nl_input": "The query requires a Python 3 implementation using tkinter to create an open file dialog. The preferred solution should utilize standard libraries without relying on external modules like psidialogs. It should correctly handle file selection and return the chosen filename(s), ensuring compatibility with both Python 2 and 3 through appropriate import handling.",
+        "url": 3956
+    },
+    {
+        "nl_input": "The query seeks a Python method to indent text, where the indentation increases with each call. It involves an object-oriented approach, using `self` to track and update the indentation level automatically. The method should return properly indented blocks, supporting structured formatting of output text dynamically.",
+        "url": 4150
+    },
+    {
+        "nl_input": "The query seeks a Python function to track the centroid of an object. The provided codes calculate centroids using mean coordinates, center of mass, and distance to centroid. They involve NumPy operations for coordinate handling, distance calculation, and region analysis. The main requirement is computing or tracking an object's geometric center for applications like object tracking or spatial analysis.",
+        "url": 4486
+    },
+    {
+        "nl_input": "The query seeks a Python function using `ctypes` to return a float array, specifically handling 32-bit or 64-bit floating-point data from a C pointer and converting it into a NumPy array. It requires type checking and efficient conversion without manual iteration.",
+        "url": 82
+    },
+    {
+        "nl_input": "The query asks how to create paragraphs in Python. The referenced code suggests defining a `paragraph` function that generates formatted text blocks, customizable with separators, wrappers, HTML support, and sentence quantity. It relies on a broader `paragraphs` function to handle the actual generation.",
+        "url": 5074
+    },
+    {
+        "nl_input": "The query requires implementing a DELETE request using Python's `requests` library. The code should define a function that sends a DELETE HTTP request to a specified endpoint, utilizes a session for handling the request, and returns the response. Additionally, it implies proper handling of sessions and possible integration with a DNSSEC deletion process.",
+        "url": 5719
+    },
+    {
+        "nl_input": "The query requires a Python function to replace month abbreviations with their corresponding numerical values in a given date string. The function should support case-insensitive substitution and may involve extracting the month information, matching abbreviations, and performing the replacement dynamically.",
+        "url": 2762
+    },
+    {
+        "nl_input": "The query seeks to determine the type of a data object in Python. It references helper functions that check if an object is a string, verify date-related data types, and distinguish types using both Python and NumPy type checks. The goal is to identify the most appropriate method or function to classify data objects accurately based on their type.",
+        "url": 2128
+    },
+    {
+        "nl_input": "The query requires validating JSON data against a schema using Python's `jsonschema` library. It involves handling validation errors gracefully and returning appropriate success or error messages. The functionality includes passing additional options during validation and ensuring schema safety.",
+        "url": 5004
+    },
+    {
+        "nl_input": "The query requires a Python implementation to obtain a WeChat access token, typically involving a method to retrieve and refresh the token, ensuring it is valid and handles expiration correctly.",
+        "url": 6100
+    },
+    {
+        "nl_input": "The query seeks a method to convert a string value to an integer in Python, with handling for possible non-numeric characters or exceptions during conversion.",
+        "url": 1831
+    },
+    {
+        "nl_input": "The query seeks to implement drag-and-drop functionality in Python. The provided code snippets suggest using libraries such as Selenium for web-based drag and drop, and potentially GUI frameworks like PyQt for handling mouse events and visual drag operations. The main requirement is enabling interactive element movement through user actions.",
+        "url": 547
+    },
+    {
+        "nl_input": "The query seeks a Python function to generate a unique list by removing duplicate elements from a single input list. All provided code examples achieve this by iterating through the input list and appending only first-occurrence elements to a new list, ensuring uniqueness while preserving order.",
+        "url": 351
+    },
+    {
+        "nl_input": "The query seeks to address an issue where Python 3 does not run in Git Bash. The relevant requirement is ensuring that Git is properly installed and accessible in the system's PATH, as indicated by the `check_git` function which verifies Git installation by calling `git --version`. This implies the need to check environment configurations for Git and Python compatibility. \n\n**Description of requirements (within 80 words):**  \nEnsure Git is installed and configured in the system PATH to enable Python 3 execution in Git Bash. Verify compatibility between Git Bash, Python 3, and the operating system environment.",
+        "url": 632
+    },
+    {
+        "nl_input": "The query requires creating an unknown number of names (variables or identifiers) in Python and printing them. The focus is on dynamically generating variable names and outputting their values.",
+        "url": 5286
+    },
+    {
+        "nl_input": "Check if an element exists in a JSON structure in Python. The function should handle cases where the input may not be a dictionary, attempt to parse strings as JSON, and update or set values in a JSON object. The goal is to ensure safe access and modification of JSON data.",
+        "url": 1785
+    },
+    {
+        "nl_input": "The query seeks to determine the number of unique values in a list using Python. It references three similar functions that iterate through a list and append only first-occurring items to a new list, thereby preserving uniqueness. Each function serves the same purpose but uses different variable names and syntax styles.",
+        "url": 320
+    },
+    {
+        "nl_input": "To randomize items in a list in Python, you can use the `random.shuffle()` function from the `random` module or `np.random.shuffle()` from NumPy. The provided code examples demonstrate shuffling a single list with a seed, consistently shuffling multiple lists together, and selecting a random element from a sequence. The main requirement is to randomly reorder elements within a list while optionally maintaining consistency across related lists.",
+        "url": 2328
+    },
+    {
+        "nl_input": "The query requires a Python implementation on Windows to detect and handle keypress events. The solution should capture key presses, potentially with event handling and suppression capabilities.",
+        "url": 5666
+    },
+    {
+        "nl_input": "The query requires binding a scrollbar to a canvas in Python using Tkinter. The relevant code should configure the canvas to update its scroll region dynamically and set up the scrollbar's behavior, ensuring proper grid placement for interaction between the canvas and scrollbar.",
+        "url": 2648
+    },
+    {
+        "nl_input": "To configure logging to record only error-level messages, use `logging.getLogger().setLevel(logging.ERROR)`. This ensures that the logger captures errors exclusively, filtering out less severe log levels like warning or info. Adjusting the log level filters which messages are recorded, so setting it to `ERROR` will ignore logs with lower severity.",
+        "url": 5088
+    },
+    {
+        "nl_input": "The query requires a Python function to safely format a string using variable arguments (`*args`) or keyword arguments (`**kwargs`), ensuring proper handling of special characters like backslashes and quotes during the formatting process.",
+        "url": 338
+    },
+    {
+        "nl_input": "The query requires extracting the host IP from a URL using Python. The desired functionality involves parsing the URL to retrieve the network location (host), removing any port information, and returning only the IP address or hostname. Code that utilizes `urlparse` and processes `netloc` aligns with this requirement.",
+        "url": 5694
+    },
+    {
+        "nl_input": "The query requires creating or manipulating a NumPy masked array, specifically focusing on validation or proper handling of masks and data. It involves extracting masked data, validating its structure, and potentially flattening or indexing it. The goal is to ensure correct masking behavior, possibly for further processing or analysis.",
+        "url": 4210
+    },
+    {
+        "nl_input": "The query seeks a Python implementation to handle the closing of a child widget by emitting a close signal or event. It involves overriding the `closeEvent` method to trigger custom behavior, potentially preventing closure based on callbacks, and ensuring proper cleanup or event propagation.",
+        "url": 1949
+    },
+    {
+        "nl_input": "The query requires a Python function to read data from a CSV string and convert it into a NumPy array. The function should handle input in the form of a string-like object, allow specification of data type, and properly parse the CSV content with comma-separated values.",
+        "url": 5746
+    },
+    {
+        "nl_input": "The query requires converting a string to a bytearray in Python. The relevant code should handle the conversion, potentially involving encoding specification, and accommodate different Python versions (PY3 vs older). It may also involve checking the input type before conversion.",
+        "url": 5708
+    },
+    {
+        "nl_input": "The query requires a Python function that can load a string into a Python object using a helper class or method, involving operations like string-to-file conversion and unmarshalling.",
+        "url": 1197
+    },
+    {
+        "nl_input": "The query requires a Python LDAP function to retrieve all groups a user belongs to. It involves filtering the user, searching for associated groups using an LDAP search, and returning the list of group names.",
+        "url": 5009
+    },
+    {
+        "nl_input": "The query seeks to determine how to check if a value is a string in Python, considering different versions (Python 2 and Python 3), and potentially with support for byte strings or integration with libraries like NumPy.",
+        "url": 5589
+    },
+    {
+        "nl_input": "The query requires a Python function to access or retrieve the current global variables or local variables within a specific frame, potentially for debugging or introspection purposes.",
+        "url": 4156
+    },
+    {
+        "nl_input": "The query is asking about how to retrieve child loggers in Python. The referenced code provides functions related to logger initialization and handling, including retrieving plugins as loggers, initializing a logger for a class, and logging messages with consideration of the logger hierarchy.",
+        "url": 1928
+    },
+    {
+        "nl_input": "To determine if a text file is empty in Python, check whether the file exists and has a size of zero bytes. A function can be written using `os.path.exists()` to verify the file's presence and `os.path.getsize()` to check its content length. If the file exists and its size is zero, it is considered empty.",
+        "url": 5672
+    },
+    {
+        "nl_input": "The query seeks a Python function to compute p-values for a normal distribution, involving the probability density function (pdf) of a normal distribution. The relevant code defines a function `norm(x, mu, sigma=1.0)` that calculates the pdf using `stats.norm(loc=mu, scale=sigma).pdf(x)`. This function fits the requirement by returning the normal distribution's pdf at value `x` with given mean `mu` and standard deviation `sigma`.",
+        "url": 376
+    },
+    {
+        "nl_input": "The query requires creating a ctypes array from a Python object, specifically handling arrays of arrays in Python using `ctypes`. The code should support conversion of input values into a C-compatible array type, potentially involving NumPy arrays with matching data types. The provided examples focus on converting integer arrays to and from C pointers using `ctypes` and NumPy interoperability.",
+        "url": 5961
+    },
+    {
+        "nl_input": "The query requires a function to scale a 1D array in Python so that its values fall between 0 and 1. The function should utilize NumPy for numerical operations, potentially involving scaling by a factor and shifting by an offset to achieve the desired normalization.",
+        "url": 5183
+    },
+    {
+        "nl_input": "The query requires a Python function to convert characters in a string to uppercase or lowercase, potentially involving transformations like extracting uppercase letters, converting camel case to underscores, or lowercasing with separators.",
+        "url": 878
+    },
+    {
+        "nl_input": "The query seeks a Python-based expression evaluator using PLY (Python Lex-Yacc), capable of parsing and evaluating expressions. The implementation should support dynamic execution of parsed JavaScript-like expressions, potentially involving compilation plans and variable scoping. Key functionalities include expression parsing, evaluation in a controlled environment, and retrieval of evaluated results.",
+        "url": 3942
+    },
+    {
+        "nl_input": "Calculate the SHA-1 hash of a file's contents using Python's `hashlib` library. The function should read the entire file in binary mode and return the hexadecimal digest of the SHA-1 hash.",
+        "url": 4951
+    },
+    {
+        "nl_input": "The query seeks a method to set a breakpoint in Python using `pdb` without capturing the standard output. It implies a need for direct interaction with the console during debugging, bypassing any output redirection.",
+        "url": 900
+    },
+    {
+        "nl_input": "The query asks how to write a factorial function in Python. The code at URL 5904 provides a complete and correct implementation of a factorial function, including input validation and optional modulo operation. It accurately calculates the factorial of a non-negative integer, making it the most suitable solution for the query's requirements.",
+        "url": 5904
+    },
+    {
+        "nl_input": "The query requires a Python method to retrieve the last column or entry from a dataset or file. The method should efficiently access the final item, potentially using indexing, file positioning, or a database query depending on the underlying data structure.",
+        "url": 587
+    },
+    {
+        "nl_input": "The query seeks a method to change or retrieve a file's extension in Python. It includes functions for extracting the file extension, determining its type based on known groups, and inferring the format using `os.path.splitext`. The main goal is to manipulate or identify file extensions effectively.",
+        "url": 1489
+    },
+    {
+        "nl_input": "The query requires a Python function to retrieve memory information for the current process. The desired functionality involves using the `psutil` library to obtain memory details, specifically focusing on the memory usage of the running process rather than system-wide memory statistics.",
+        "url": 3055
+    },
+    {
+        "nl_input": "The query seeks to determine if two strings are equal in Python, considering case-sensitive comparison. It implies a need for a function that returns `True` when the strings are identical and `False` otherwise.",
+        "url": 5584
+    },
+    {
+        "nl_input": "The query requires creating a single database table using SQLAlchemy in a Flask application. It focuses on initializing the database structure, binding to an engine, and echoing a confirmation message upon successful creation. The implementation should follow typical Flask-SQLAlchemy practices with clear setup steps.",
+        "url": 3549
+    },
+    {
+        "nl_input": "The query requires a Python function to clean or remove files and directories, particularly focusing on removing an output folder and various temporary or compiled Python files. It involves deleting specific directories like `build/` and `dist/`, removing `.pyc`, `.pyo`, `__pycache__`, and other temporary files, along with optionally cleaning up based on dry-run functionality.",
+        "url": 4094
+    },
+    {
+        "nl_input": "The query requires a Python function to print the nodes of a binary tree, displaying each node's value with appropriate indentation to represent the tree structure. The function should recursively traverse and print each node, using indentation or prefixes to visually indicate the hierarchy level of each node in the binary tree.",
+        "url": 5626
+    },
+    {
+        "nl_input": "The query requires a Python function to parse a query string by splitting it into key-value pairs, decoding the values, and returning a dictionary of the parsed components.",
+        "url": 2540
+    },
+    {
+        "nl_input": "The query requires a Python function to iterate through a folder of images. The desired functionality includes locating image files (e.g., .jpg, .png, .bmp), reading them using libraries like OpenCV, and potentially returning both the image data and its file path for further processing.",
+        "url": 2248
+    },
+    {
+        "nl_input": "The query seeks a Python function to check if a date string is valid. The function should attempt parsing the date according to a specified format (e.g., YYYY-MM-DD), and return `True` if valid or `False` if not. Invalid formats or non-existent dates should trigger an exception, indicating the input is not a valid date.",
+        "url": 5581
+    },
+    {
+        "nl_input": "The query requires a Python implementation for computing spherical Bessel functions. The provided code includes three functions, but only one (`sbessely`) is relevant as it calculates spherical Bessel functions of the second kind up to order N for a given input x.",
+        "url": 3223
+    },
+    {
+        "nl_input": "To check if a file is empty in Python, you can examine its size or attempt to read content from it. One approach uses `os.path.getsize()` to check if the file size is zero. Another method reads the file contents and checks if it is empty, particularly handling Python 2 compatibility. Some implementations also include type checking or exception handling for robustness.",
+        "url": 5672
+    },
+    {
+        "nl_input": "The query seeks a method to stop or terminate a multiprocessing process in Python, specifically looking for functionality to gracefully shut down or forcefully kill a process, ensuring it no longer runs and properly releases resources.",
+        "url": 4659
+    },
+    {
+        "nl_input": "The query requires a Python function to ensure all words in a string are separated by exactly one space. The function should handle splitting and stripping spaces, removing extra whitespace, and optionally joining the words with a single space as a separator.",
+        "url": 2339
+    },
+    {
+        "nl_input": "Create a multidimensional array in Python filled exclusively with the value 1.",
+        "url": 856
+    },
+    {
+        "nl_input": "The query seeks to understand how to initialize variables of an object in Python, particularly within a session using TensorFlow. The relevant code demonstrates variable initialization using `tf.global_variables_initializer()` and `tf.local_variables_initializer()` within a function called `sg_init`. This function runs the initialization operations via `sess.run()`, ensuring all variables are properly set up before use.",
+        "url": 4075
+    },
+    {
+        "nl_input": "The query seeks to understand how to limit the number of results returned when querying Elasticsearch using Python. It references code that demonstrates methods for loading and iterating over documents in Elasticsearch, including the use of parameters like `chunk_size` and `limit`, suggesting a need to control the volume of data processed or retrieved in bulk operations.",
+        "url": 1953
+    },
+    {
+        "nl_input": "The query seeks methods to forcibly exit a Python program without raising an exception, focusing on functions that terminate execution immediately, such as using `sys.exit()` or `os._exit()`, and potentially logging or printing a message before exiting.",
+        "url": 3086
+    },
+    {
+        "nl_input": "The query seeks to understand how to create or identify a weak reference to a bound method in Python. This involves understanding bound methods via attributes like `__self__` and `__func__`, and potentially using `weakref` to reference instances without preventing garbage collection.",
+        "url": 4389
+    },
+    {
+        "nl_input": "The query seeks a Python function that calls an index on an iterable, stopping or returning the element at a specified position. It implies a need for iterating with index access, potentially for sequences or custom iterables.",
+        "url": 2047
+    },
+    {
+        "nl_input": "The query seeks to handle scenarios where a datetime value may be undefined or missing in Python. It involves parsing ISO strings into `datetime` objects, allowing for optional returns when the input is empty or invalid. The code supports operations like checking date types, converting strings to localized datetimes, and safely handling errors without raising exceptions.",
+        "url": 1753
+    },
+    {
+        "nl_input": "The query seeks functionality to navigate to the next page in a notebook interface, wrapping around to the first page after the last. It involves methods that handle page transitions, specifically focusing on moving forward with wrap-around logic.",
+        "url": 3706
+    },
+    {
+        "nl_input": "The query requires a method to fill null values in a DataFrame column using Python. The function should handle cases where nulls are represented as `None` or empty strings, and replace them with `NaN`, likely using pandas for data manipulation.",
+        "url": 889
+    },
+    {
+        "nl_input": "The query requires a Python function to execute an external command and capture its output. The function should return the command's exit code and output, handling standard output and error streams. Multiple code examples are provided, using `subprocess.Popen` or `subprocess.check_output`, with optional logging and string stripping/decoding.",
+        "url": 114
+    },
+    {
+        "nl_input": "The query seeks to understand how to compile a Python program for use in C++. The provided codes reference functions related to compiling Python source code into executable or evaluable code objects, which can potentially be integrated into a C++ environment.",
+        "url": 801
+    },
+    {
+        "nl_input": "The query requires a Python function to convert an image file or URL into a byte array representation. It involves reading the image data, decoding it if necessary (e.g., from a URL), and then converting it into a usable byte format for further processing or transmission.",
+        "url": 4466
+    },
+    {
+        "nl_input": "The query seeks to understand how to use an access token with OAuth in Python. The provided code examples demonstrate methods for setting or retrieving an access token using OAuth authentication, specifically within the Tweepy library and custom OAuth implementations.",
+        "url": 2605
+    },
+    {
+        "nl_input": "The query seeks a Python implementation where a line continues to the next line, typically involving logic that appends or processes content from one line to the next, possibly during tokenization or file reading.",
+        "url": 34
+    },
+    {
+        "nl_input": "The query seeks to understand how integer precision is handled in Python, particularly during rounding operations. It explores functions that round numbers to a specified precision using integers, focusing on accurate manipulation and conversion while maintaining expected precision behavior.",
+        "url": 60
+    },
+    {
+        "nl_input": "The query requires modifying a dice roll program in Python to use a function for rolling the die. It specifically references implementing or adjusting a function that handles die rolls, suggesting the need for randomness (like `random.randint`), user interaction to continue rolling, and returning the sum of the rolls. The focus is on function integration and user-driven execution flow.",
+        "url": 3313
+    },
+    {
+        "nl_input": "The query addresses the error \"Python 'namespace' object is not iterable,\" indicating that an attempt was made to iterate over a namespace object that does not support iteration. The provided code includes functions related to checking iterability and extracting arguments from a namespace, suggesting the need to validate whether an object is iterable before performing iteration or argument extraction operations.",
+        "url": 4431
+    },
+    {
+        "nl_input": "To specify a seed for Python's random module, you can use `random.seed(a=seed_value)` to initialize the random number generator with a specific seed. Alternatively, using `RandomState(seed)` from NumPy allows for generating reproducible random states. A custom function can handle seeding logic, including generating a random seed if none is provided.",
+        "url": 1994
+    },
+    {
+        "nl_input": "The query seeks to determine the default argument values of a function in Python. The relevant code should extract or retrieve the default values of function parameters programmatically, typically using inspection mechanisms or argument parsing techniques.",
+        "url": 1432
+    },
+    {
+        "nl_input": "The query requires converting the data type of a NumPy array to an integer type. The code should handle dtype conversion, potentially involving scaling or interfacing with C arrays. Relevant functions demonstrate converting arrays using `astype`, `fromiter`, or scaling based on integer limits.",
+        "url": 5736
+    },
+    {
+        "nl_input": "The query seeks a method to forcibly close a socket connection before opening a new one, ensuring proper resource management and avoiding conflicts. It emphasizes handling potential errors during closure and ensuring the socket is in a clean state before reuse.",
+        "url": 4558
+    },
+    {
+        "nl_input": "Find the index of a specific series in a chart data object, ensuring it is non-zero and exists within the data structure. The solution should return the position of the series if found, or raise an exception otherwise.",
+        "url": 621
+    },
+    {
+        "nl_input": "To add a number to certain elements of a NumPy array, you can index the desired positions and perform the addition. For example, using `arr[indices] += value` modifies specific elements in place. The `_increment` function demonstrates this by adding values from one array to another at specified indices.",
+        "url": 4629
+    },
+    {
+        "nl_input": "The query requires running Python unit tests while simultaneously measuring code coverage. The ideal solution executes tests and generates a coverage report, possibly including HTML output and opening the coverage results in a browser.",
+        "url": 4778
+    },
+    {
+        "nl_input": "The query requires a Python function to list files in a directory with specific extensions only. It should allow filtering by one or more file extensions, effectively including only the desired file types while excluding others. The function must return a list of matching files.",
+        "url": 868
+    },
+    {
+        "nl_input": "The query seeks information on Python global type hinting. From the provided code, it appears that type handling involves checking types via functions like `isinstance` and examining attributes such as `__name__` and `__module__`. Type representation and validation logic are customized, especially for objects and built-in types.",
+        "url": 534
+    },
+    {
+        "nl_input": "The query seeks a Python function that calculates the average of a list of numbers. The function should sum the elements and divide by the count, handling basic cases like empty or single-element lists appropriately.",
+        "url": 2957
+    },
+    {
+        "nl_input": "The query seeks a Python function to check if two arrays (or iterables) are equal, handling nested structures and different types like NumPy arrays. It requires deep equality comparison while supporting various data types such as lists, dictionaries, and strings, ensuring recursive checks and accurate results.",
+        "url": 180
+    },
+    {
+        "nl_input": "The query requires a Python function to round down a number or NumPy array elements to the nearest integer, favoring truncation toward negative infinity or consistent downward rounding, rather than standard rounding behavior.",
+        "url": 1487
+    },
+    {
+        "nl_input": "The query seeks a Python implementation using `pywin32` to refresh or redraw a window, specifically targeting screen updates through native Windows API calls. It emphasizes capturing and refreshing screen content, likely for automation or real-time display purposes.",
+        "url": 4699
+    },
+    {
+        "nl_input": "The query requires a Python function to retrieve the largest (most recent) date from a list of date objects or strings. The solution should process a list input and return the maximum date value, potentially involving datetime parsing and comparison operations.",
+        "url": 4978
+    },
+    {
+        "nl_input": "The query requires a Python locking mechanism that does not block. It seeks a method or function to acquire a lock without waiting, allowing the program to continue execution regardless of whether the lock is immediately available.",
+        "url": 739
+    },
+    {
+        "nl_input": "The query requires a Python method to remove an item from a set. The implementation should handle element deletion, support integer elements, and optionally manage key removal from a dictionary or list structure while maintaining index consistency.",
+        "url": 5741
+    },
+    {
+        "nl_input": "The query asks how to convert a sentence into underscores using Python. The provided codes handle conversions between camel case and underscores but do not directly address converting a full sentence into underscores. The closest functionality involves splitting strings on underscores and manipulating cases, which can be adapted for the task with additional code not present in the given options.",
+        "url": 358
+    },
+    {
+        "nl_input": "The query seeks to remove timezone information from a timestamp in Python. It involves normalizing or cleaning the timestamp by converting it to a naive datetime object without timezone details, effectively ensuring timezone-agnostic handling of the time data.",
+        "url": 1581
+    },
+    {
+        "nl_input": "The query requires converting all object IDs to strings in a Python Sanic application. This involves generating string-based IDs from objects, potentially handling special characters, and ensuring compatibility with string representations across different data types and encodings.",
+        "url": 4302
+    },
+    {
+        "nl_input": "The query requires marking a test as an expected failure in Python using mocking. The relevant functionality involves asserting that a mock object is called as expected, including checking call counts and arguments. The code should handle cases where specific calls are anticipated, and if not met, raise an `AssertionError`. This supports testing scenarios where a failure is anticipated, allowing controlled handling of such situations within test frameworks.",
+        "url": 4220
+    },
+    {
+        "nl_input": "The query requires a Python function to retrieve the current user's desktop environment. The solution should utilize platform-specific methods, handling differences between Windows and Unix-like systems appropriately. It must return the desktop identifier or name for the currently logged-in user without requiring additional user input.",
+        "url": 4922
+    },
+    {
+        "nl_input": "The query requires connecting to a Redis instance running in another Docker container using Python. The connection should be established using the host and port exposed by the Docker container, with support for authentication and proper configuration of Redis client parameters.",
+        "url": 2168
+    },
+    {
+        "nl_input": "The query requires creating or manipulating a subplot in Python with a second y-axis, likely using Matplotlib. The focus is on accessing and modifying subplot properties related to the y-axis, such as displaying tick labels and setting axis limits.",
+        "url": 2426
+    },
+    {
+        "nl_input": "The query requires a Python function that detects the first occurrence of any element from a list within a given string, returning its position or indicating if no match is found.",
+        "url": 5545
+    },
+    {
+        "nl_input": "To flip a matrix in Python, use NumPy's `np.flip` function with the appropriate axis: `axis=1` for horizontal flipping and `axis=0` for vertical flipping. The input should be a NumPy array. PIL images can alternatively be flipped using the `transpose` method with `Image.FLIP_LEFT_RIGHT`.",
+        "url": 538
+    },
+    {
+        "nl_input": "The query seeks a Python function that returns the fully qualified name of an object, combining its module and class or name attributes appropriately. The desired function should handle both objects with a `__name__` attribute and those requiring lookup via their class. It must properly format and return the module-qualified name when available.",
+        "url": 354
+    },
+    {
+        "nl_input": "The query seeks a Python function to determine if a given input is an integer or a boolean. The function should accurately differentiate between integers, floating-point numbers, booleans, and other data types, returning `True` only if the input is strictly an integer or a boolean value.",
+        "url": 5567
+    },
+    {
+        "nl_input": "The query seeks to store columns as an array in Python. The relevant code defines a method `to_array` that converts labeled columns into a structured NumPy array by creating a dtype from column labels and their data types, then populating the array with corresponding values from each column.",
+        "url": 5209
+    },
+    {
+        "nl_input": "The query requires creating a new column in a DataFrame by joining existing columns in Python. It involves concatenating column values into a single string, handling different data types, and possibly performing joins between DataFrames while combining their columns appropriately.",
+        "url": 306
+    },
+    {
+        "nl_input": "To remove blank lines from a Python file, you can process the text by splitting it into lines, stripping whitespace, and filtering out empty lines. The result is a joined string of non-blank lines. This approach is demonstrated across multiple functions in the provided code samples.",
+        "url": 964
+    },
+    {
+        "nl_input": "To determine the size of a queue in Python, use the `qsize()` method from the `queue` module. This method acquires a lock, calls the internal `_qsize()` function to get the current size, releases the lock, and returns the result. It is thread-safe and provides the current number of items in the queue.",
+        "url": 425
+    },
+    {
+        "nl_input": "The query seeks methods related to finding the index of a substring within a string in Python. The functions provided offer capabilities for locating substrings, including handling multiple occurrences and supporting operations like replacement at specific indices.",
+        "url": 1832
+    },
+    {
+        "nl_input": "The query seeks to understand how to compare an integer with `None` in Python. The relevant code demonstrates using a key function with `min` to treat `None` as a very large integer (`sys.maxint`) during comparison, allowing safe comparisons between integers and `None`.",
+        "url": 5540
+    },
+    {
+        "nl_input": "The query requires converting JSON data to a Protocol Buffer (protobuf) object in Python. The relevant code should demonstrate parsing JSON into a protobuf structure using utilities like `json_format.Parse` or similar methods for deserialization.",
+        "url": 2465
+    },
+    {
+        "nl_input": "The query asks how to join two data frames in Python. The provided code examples include functions for cross joining, merging with preserved groups, and intersecting data frames. Based on the query's intent, the most relevant solution involves using `pd.merge()` to combine two data frames, which is demonstrated in the first and second code snippets. A cross join can be achieved by adding a common key and merging on that key, as shown in the first snippet. Alternatively, the second snippet uses `pd.merge()` directly with preserved group information, suggesting a more general approach to joining data frames in Python.",
+        "url": 793
+    },
+    {
+        "nl_input": "The query seeks a method to compute the product of elements in a list in Python. Among the provided code options, none directly computes the product of a list. However, they include functions for generating combinations, calculating dot products, and multiplying list elements by a number. To meet the query's need, a function that multiplies all elements in a list together (e.g., using `math.prod` or a custom loop) would be required.",
+        "url": 5599
+    },
+    {
+        "nl_input": "The query seeks to generate all dates within a specified date range in Python. The desired functionality involves iterating or creating a list of dates starting from a `start_date` up to, but not including, an `end_date`. This is typically achieved using the `timedelta` class from the `datetime` module to incrementally add days within a loop or list comprehension.",
+        "url": 573
+    },
+    {
+        "nl_input": "The query requires a Python function to access and retrieve content from a remote file. The function should handle remote execution, read the file's contents, and return it as a decoded string. It utilizes tools like `get` to fetch the remote file content and `BytesIO` for in-memory handling. Additionally, it involves error handling for non-existent files and supports remote user operations.",
+        "url": 1848
+    },
+    {
+        "nl_input": "To download a `.txt` file from the internet in Python, use a function that sends a request to the given URL and writes the response content to a local file. The function should handle exceptions and support custom headers for robustness. The downloaded content should be saved in binary mode to preserve encoding integrity.",
+        "url": 4235
+    },
+    {
+        "nl_input": "The query requires a method to remove stopwords from a given text or list of words. It focuses on filtering out common, non-informative words (e.g., \"the\", \"and\") using a predefined list of stopwords, potentially in Python. The desired functionality involves tokenizing the input and excluding words present in the stopword list, supporting tasks like text preprocessing for NLP applications.",
+        "url": 1153
+    },
+    {
+        "nl_input": "The query seeks to understand how to increase or manage the limit on open file handles in Python. The relevant code demonstrates using `resource.setrlimit()` to raise the file handle limit to a predefined constant value.",
+        "url": 2901
+    },
+    {
+        "nl_input": "The query seeks to determine the longest sentence in a given corpus using Python. It involves processing text data to analyze sentence lengths and identify the maximum length among them.",
+        "url": 3106
+    },
+    {
+        "nl_input": "The query seeks a Python function to deterministically print the contents of a dictionary, ensuring consistent ordering across multiple runs. The ideal solution involves sorting keys before outputting key-value pairs for deterministic results.",
+        "url": 920
+    },
+    {
+        "nl_input": "The query seeks a Python function to remove namespaces from XML tags. The desired functionality involves processing an XML element or document and stripping namespace prefixes from the tags, typically by splitting the tag name at the closing brace `}` and retaining only the local part of the tag name.",
+        "url": 2580
+    },
+    {
+        "nl_input": "The query seeks a Python function to handle null or missing values in a DataFrame column. It involves replacing nulls with NaN, potentially filling them using methods like median, and ensuring compatibility with numeric data types. The function should handle exceptions and may involve creating new indicator columns for missing values.",
+        "url": 889
+    },
+    {
+        "nl_input": "The query requires a Python function to handle asynchronous input from a GUI environment. The ideal solution should allow non-blocking input, enabling interaction without freezing the GUI. It likely needs compatibility with modern Python versions and proper handling of standard input streams.",
+        "url": 975
+    },
+    {
+        "nl_input": "To find the index of an element in a set-like structure in Python, iterate through the elements using `enumerate`, and return the index when the element matches. If the element is not found, return `None`. This approach emulates the `index()` method for sequences but works on custom set-like objects by accessing their iterable representation.",
+        "url": 1272
+    },
+    {
+        "nl_input": "The query seeks a Python 3 function to convert an object into its string representation. The desired functionality includes handling non-string objects, decoding bytes if necessary, and returning a human-readable string suitable for printing or logging purposes.",
+        "url": 1942
+    },
+    {
+        "nl_input": "Find the most recently modified file that contains a specific string. The solution should determine the newest file by modification time and check its contents for the target string.",
+        "url": 958
+    },
+    {
+        "nl_input": "The query seeks to understand why a DELETE operation in Python's sqlite3 does not remove records from the database. It provides sample code where methods like `wipe`, `wipe_table`, and `clear_table` execute DELETE SQL commands, yet records remain. The issue may involve missing commits, incorrect table names, or lack of proper execution handling.",
+        "url": 5107
+    },
+    {
+        "nl_input": "The query seeks to apply a function to each item in an iterator using Python. It involves transforming elements through functions like `map`, `_accumulate`, or `apply`, which process iterables by applying a given function either sequentially, cumulatively, or asynchronously. The core need is to perform element-wise function application on an iterator.",
+        "url": 3963
+    },
+    {
+        "nl_input": "The query requires implementing or understanding the `next` method in Python for iterating through items, typically used in custom iterators. It involves logic for advancing iteration, handling exhaustion with `StopIteration`, and possibly skipping elements. The context suggests a focus on iteration mechanics in Python classes.",
+        "url": 1968
+    },
+    {
+        "nl_input": "The query seeks a method to print all variables within an object in Python. It requires accessing and displaying the attributes or parameters of an object, potentially involving introspection or iteration over the object's properties for output.",
+        "url": 2570
+    },
+    {
+        "nl_input": "To determine the index interval for a given range of an array in Python, extract the step value used in generating the array. The step defines the difference between consecutive indices. If no step is specified, it defaults to 1. Use this step value to compute the interval between indices in the specified range.",
+        "url": 6063
+    },
+    {
+        "nl_input": "The query requires a Python function to print a NumPy array along with its data type and shape, formatting the output in a readable string format. The function should handle arrays of any shape and display them using NumPy's string representation with a specified threshold for truncation.",
+        "url": 5651
+    },
+    {
+        "nl_input": "The query requires a function to validate that a given value is of a specified type, raising an appropriate error message if the validation fails. It involves checking instance types, supporting multiple allowed types, and generating descriptive error messages for assertion failures.",
+        "url": 1519
+    },
+    {
+        "nl_input": "The query seeks a Python implementation of multiprocessing using `map` that supports multiple inputs. The ideal solution should handle parallel execution, utilize multiple processes efficiently, and be compatible with different operating systems. It may also include optional features like progress tracking, argument unpacking (`starmap`), and system-specific compatibility handling.",
+        "url": 3696
+    },
+    {
+        "nl_input": "The query requires a Python function to add a suffix to a filename before the file extension. The desired functionality involves splitting the filename and appending the suffix directly before the extension, ensuring the original extension remains unchanged.",
+        "url": 2100
+    },
+    {
+        "nl_input": "The query seeks the best approach to handle pagination in Python. The relevant code should involve functions or methods that manage page numbers, offsets, limits, and iteration over paginated results. It may include retrieving a specific page, handling next page logic, and efficiently traversing through data spread across multiple pages.",
+        "url": 4271
+    },
+    {
+        "nl_input": "The query requires a Python function that computes and returns all the factors of a given number as a list. The desired code should efficiently find factors by checking divisibility up to the square root of the number and include both divisor pairs, ensuring no duplicates, and returning them in a list format.",
+        "url": 6090
+    },
+    {
+        "nl_input": "The query seeks the best method to read XML in Python. The provided code examples utilize `minidom` and helper functions for parsing and serializing XML data. They demonstrate converting XML strings to dictionaries, parsing XML responses, and pretty-printing XML output. Overall, the focus is on efficient XML processing using built-in or library-supported tools in Python.",
+        "url": 89
+    },
+    {
+        "nl_input": "To write a string to a YAML file in Python, use `yaml.dump()` with a dictionary and open the file in write mode. The function should accept the data, path, and optional parameters for formatting. Indentation can be specified for better readability.",
+        "url": 4299
+    },
+    {
+        "nl_input": "The query requires a Python function to move the cursor to a specific line in a text editor or document interface. The desired functionality involves positioning the cursor at the start of a specified line number within a buffer or document, using methods compatible with a GUI or terminal-based editor.",
+        "url": 814
+    },
+    {
+        "nl_input": "The query seeks a Python function to convert tokens (strings) into corresponding integer IDs, potentially handling vocabulary mapping, unknown tokens, and ASCII encoding. The ideal solution involves mapping each token to an ID using a predefined vocabulary dictionary, with fallback for unknown tokens and optional string sanitization or encoding.",
+        "url": 6012
+    },
+    {
+        "nl_input": "The query seeks to extract the domain from a given URL using Python's `urlparse` module. The relevant code parses the URL, retrieves the scheme (e.g., http, https), and the network location (netloc), and returns the domain in the format \"schema://domain\". Other variations include extracting just the host or using regex for domain matching.",
+        "url": 5798
+    },
+    {
+        "nl_input": "The query requires a Python function to convert a string into a number, preferably handling both integers and floating-point numbers. The implementation should be robust against non-numeric characters and capable of returning the appropriate numeric type based on the input string.",
+        "url": 40
+    },
+    {
+        "nl_input": "The query requires a Python function to check if all elements in a given column or array are of string type. It involves verifying each value's type, ensuring compatibility with string data, and returning a boolean result indicating whether all elements meet this condition.",
+        "url": 5597
+    },
+    {
+        "nl_input": "The query requires a function to convert numerical data into binary representation. The provided code includes functions for binning values based on edges, reading NumPy data from a file, and converting integer data to a binary list of specified width. The core requirement is implementing or utilizing a method to transform numeric input into its binary equivalent, possibly for data encoding, feature transformation, or serialization purposes.",
+        "url": 521
+    },
+    {
+        "nl_input": "The query requires a Python function using boto3 to delete a specific key (file) from an S3 bucket. The function should accept parameters such as the AWS client, bucket name, and key name, and perform the deletion operation.",
+        "url": 1455
+    },
+    {
+        "nl_input": "The query seeks a Python implementation for generating random walk steps. The required code should produce a sequence of random steps within a specified range, potentially using uniform distribution or similar methods. It implies the need for functions capable of generating random numbers with defined boundaries and step sizes.",
+        "url": 5912
+    },
+    {
+        "nl_input": "The query seeks a Python function to recursively delete objects within nested data structures, specifically targeting scenarios where objects are contained within other objects. It references implementations that handle deletion by removing keys from dictionaries, modifying object attributes, or popping elements based on reference. The primary need is for a deep deletion mechanism that operates on embedded objects or structures.",
+        "url": 1103
+    },
+    {
+        "nl_input": "The query requires a Python function that removes or truncates the seconds part from a given timestamp, effectively rounding or adjusting the value to the nearest second or removing any sub-second precision.",
+        "url": 3242
+    },
+    {
+        "nl_input": "The query requires a Python function to load and decode JSON data from a file or string input, handling potential UTF-8 encoding issues. It implies the need for custom decoding and parsing support, suggesting usage in a class or extended functionality context.",
+        "url": 1300
+    },
+    {
+        "nl_input": "The query seeks a Python function to load a YAML file into a single document, emphasizing proper handling of the YAML parsing process. The solution should use the `yaml` module and potentially handle different loading methods (`full_load`, `load`, or `safe_load`) depending on availability and safety considerations.",
+        "url": 1355
+    },
+    {
+        "nl_input": "The query seeks to understand the functionality of a `filter` method within a Python object, particularly how it processes an input object through a series of filter functions and returns `None` if the object becomes `None` during filtering. It also touches on the initialization of filter-related attributes in parent classes.",
+        "url": 4102
+    },
+    {
+        "nl_input": "The query seeks to understand the cause and handling of a `NoneType` object attribute error in Python, specifically focusing on scenarios where operations or attribute access on `None` lead to exceptions. It also explores how to manage or represent `None` values within custom logic or object handling.",
+        "url": 94
+    },
+    {
+        "nl_input": "The query seeks to understand how to create a scrollable canvas using Python's Tkinter library. The provided code snippets illustrate methods to configure scroll regions, grid widgets with scrollbars, and synchronize scrolling across multiple canvases, all essential aspects of implementing a scrollable canvas in Tkinter.",
+        "url": 1083
+    },
+    {
+        "nl_input": "The query requires a Python function to convert GeoJSON data into TopoJSON format. The function should handle geometry collections and serialize the output into a JSON string.",
+        "url": 4600
+    },
+    {
+        "nl_input": "The query requires a Python function to retrieve the dimensions of a PNG image from a given URL. The function should handle potential errors, fetch the image data, and return its width and height. Additional features like downsizing based on a maximum size or checking minimum width may also be relevant.",
+        "url": 5568
+    },
+    {
+        "nl_input": "The query requires handling separate HTTP methods (GET and POST) in a Flask application. The code should distinguish between `POST` and `OPTIONS` requests, route them appropriately, and raise an exception for unsupported methods. Additionally, it needs to generate valid Flask responses with custom status codes and MIME types.",
+        "url": 310
+    },
+    {
+        "nl_input": "The query requires a Python function that extracts the year from a given date string. The preferred solution should parse a date string using a specified format and return the corresponding year as an integer, handling potential parsing errors gracefully.",
+        "url": 5670
+    },
+    {
+        "nl_input": "The query seeks to understand how to retrieve all modes in Python. Based on the provided code, it involves iterating over a dictionary of modes sorted by keys and returning the corresponding values as a list. The implementation suggests using an iterator with sorted keys to access mode values.",
+        "url": 5046
+    },
+    {
+        "nl_input": "The query requires a function that takes an integer as input and returns a random bitstring of that size. The desired functionality involves generating random binary strings with lengths determined by the provided integer value.",
+        "url": 5717
+    },
+    {
+        "nl_input": "To determine a file's encoding in Python, the code suggests using functions that check stream attributes or system defaults. It involves trying different methods like reading from the file, checking preferred encodings, and handling exceptions for robustness.",
+        "url": 4685
+    },
+    {
+        "nl_input": "The query requires a Python function to connect to an AWS RDS instance using Boto, specifically utilizing AWS credentials and returning a connection object for interacting with RDS services.",
+        "url": 5229
+    },
+    {
+        "nl_input": "The query seeks to determine if an image is empty using Python and OpenCV. The focus is on validating the presence of valid image data, potentially involving checks on image shape and channels.",
+        "url": 2948
+    },
+    {
+        "nl_input": "To hide a window using a button in Python, the code typically involves defining a function that calls a `hide()` method on the window object. This function can be triggered by a button click event. The `hide()` method may involve operations like withdrawing the window, unsticking it, or releasing any modal grabs, depending on the GUI framework used (e.g., Tkinter, PyQt).",
+        "url": 3119
+    },
+    {
+        "nl_input": "The query seeks to understand how to implement validation in a Python Marshmallow schema derived from a parent schema. It involves validating data against a schema, potentially with nested or referenced schemas, and may include custom validation logic or error handling during the validation process.",
+        "url": 4707
+    },
+    {
+        "nl_input": "The query requires a Python function to replace missing values in a specific column of a DataFrame with an empty string and ensure the column's data type is string. The function should take the DataFrame and column name as inputs, handle missing values appropriately, and return the modified DataFrame.",
+        "url": 1462
+    },
+    {
+        "nl_input": "The query seeks a Python method to separate list elements using whitespace. The ideal solution involves splitting elements within a list while retaining spaces, processing each line to segment strings by whitespace delimiters. This ensures that the original spacing is preserved, and each segmented part remains distinguishable within the list structure.",
+        "url": 1146
+    },
+    {
+        "nl_input": "The query seeks to understand how to set a default value in Python. The provided codes demonstrate methods named `set_default` or similar, which assign default values to parameters, attributes, or dictionary keys within a class or object context. These implementations typically take a key/name and a default value, ensuring that a specified value is used if none is provided.",
+        "url": 2494
+    },
+    {
+        "nl_input": "The query requires a function that retrieves a key from a dictionary in a case-insensitive manner, matching the given key regardless of letter casing.",
+        "url": 173
+    },
+    {
+        "nl_input": "The query seeks a Python function that retrieves the index of elements in a list that are equal to a specified value. It involves identifying code that can return the index of matching elements, with potential interest in handling both exact matches and closest-value scenarios.",
+        "url": 480
+    },
+    {
+        "nl_input": "The query seeks to address an issue where logging does not function correctly when using the Python `requests` library. The provided code snippets involve custom logging mechanisms, suggesting potential areas for troubleshooting or extending logging functionality, especially around HTTP request handling and conditional logging based on headers or function attributes.",
+        "url": 2496
+    },
+    {
+        "nl_input": "The query requires handling static files in a Flask application, specifically generating URLs for static resources. The relevant code defines a `static_url` function that constructs and returns a URL for a given static file path using Flask's `url_for`, ensuring proper path formatting across operating systems.",
+        "url": 2404
+    },
+    {
+        "nl_input": "The query requires a Python function to validate JSON data against a schema, with optional error handling and validation flags. It should accept input data and schema, perform validation using `jsonschema`, and return the result or raise exceptions based on configuration.",
+        "url": 6156
+    },
+    {
+        "nl_input": "**The query requires a Python function that prints a message with a header, bold formatting, and color support to the console.**",
+        "url": 362
+    },
+    {
+        "nl_input": "The query requires a Python function to safely cast input to an integer, handling potential type and value errors during the conversion process.",
+        "url": 1205
+    },
+    {
+        "nl_input": "The query seeks a Python function to convert a matrix into an image. The provided code includes functions for matrix manipulation and image conversion, with one function using PIL's `fromarray` to create an image from a NumPy array, which aligns with the matrix-to-image conversion requirement.",
+        "url": 1120
+    },
+    {
+        "nl_input": "The query requires a Python function that randomly selects an element from a given sequence. The function should handle different types of sequences, such as lists or sets, and return a single randomly chosen item using the `random` module.",
+        "url": 1398
+    },
+    {
+        "nl_input": "The query seeks to keep a process pool open until all assigned tasks are completed. It requires functionality that ensures the pool remains active, blocking further execution until task completion, potentially involving thread or process management and waiting mechanisms.",
+        "url": 5005
+    },
+    {
+        "nl_input": "The query seeks a Python function that runs a specified function for a certain amount of time and measures or controls its execution duration. It implies the need for timing functionality, possibly with thresholds, logging, or limiting execution based on time.",
+        "url": 2450
+    },
+    {
+        "nl_input": "The query requires converting a string into a date or datetime object in Python. The function should handle various input formats, potentially using libraries like `dateutil`, `pandas`, or `datetime`. It may involve parsing strings with or without milliseconds and support customizable date formatting.",
+        "url": 5606
+    },
+    {
+        "nl_input": "The query seeks a Python function to check if a file is executable. The provided solutions use `os.path.isfile` and `os.access(path, os.X_OK)` to verify the file's existence and execute permissions. One alternative checks if an executable exists within the system's PATH directories.",
+        "url": 2939
+    },
+    {
+        "nl_input": "The query asks how to check the length of a queue in Python. Among the provided code examples, the relevant one is the `qsize` method, which returns the size of a queue by acquiring a lock, checking the internal size, and then releasing the lock. This ensures thread-safe access to the queue's length.",
+        "url": 5555
+    },
+    {
+        "nl_input": "The query requires implementing LDAP server object queries in Python, involving methods for searching LDAP entries with filters, retrieving attributes, and handling user-group relationships with proper filtering and encoding.",
+        "url": 5470
+    },
+    {
+        "nl_input": "The query seeks to understand how to work with sections in a Python `docx` document, particularly focusing on creating different page sections and formatting text within them (e.g., using italics or bold). It also appears interested in replacing or processing headers, possibly for styling consistency within the document.",
+        "url": 1938
+    },
+    {
+        "nl_input": "The query requires a Python function to write a JSON object to a file. The function should accept the object to be written and the file path, and handle proper JSON serialization. Optional features include indentation and support for custom encoders.",
+        "url": 1198
+    },
+    {
+        "nl_input": "To compute the minimum value of a tensor in Python, use NumPy's `amin` function along a specified axis. The input tensor is converted to a NumPy array, and parameters such as axis and keepdims can be specified for the operation.",
+        "url": 5578
+    },
+    {
+        "nl_input": "The query asks how to assert that two lists are almost equal using Python's `unittest`. The requirement is to check approximate equality of list elements, possibly with custom logic for comparison. A suitable solution would involve a function that compares items element-wise, likely using `assertEqual` or a custom assertion method.",
+        "url": 2621
+    },
+    {
+        "nl_input": "To check if two inputs are equal in Python using `assertEqual`, the code compares the inputs directly with `==`, handles dictionaries specially with `assert_dict_equal`, and raises an assertion error if they are not equal, providing a formatted message.",
+        "url": 2621
+    },
+    {
+        "nl_input": "The query requires a Python implementation for iterating through a list of proxy servers to make requests. It involves functionality for setting a proxy, handling proxy configurations, and potentially using middleware or transport layers during the request process. Additionally, it references retrieving proxies from environment settings and configuration files.",
+        "url": 934
+    },
+    {
+        "nl_input": "The query requires implementing a LOESS regression in Python using a Gaussian kernel. It involves defining a Gaussian kernel function, potentially for multivariate data, and applying it within a LOESS fitting process. The code should incorporate key elements such as local weighting with a Gaussian distribution, bandwidth control via spread or standard deviation, and iterative smoothing over data points.",
+        "url": 741
+    },
+    {
+        "nl_input": "The query requires a Python function to compute the greatest common divisor (GCD) of an array of numbers, emphasizing handling multiple values and potentially floating-point precision.",
+        "url": 5816
+    },
+    {
+        "nl_input": "The query asks how to clear up memory in Python. The relevant code demonstrates methods to delete keys from an object, remove files and directories, and clean up temporary files like `.pyc`, `.pyo`, and `__pycache__`. A description of the query's needs is:\n\nTo free up memory in Python, you can delete unnecessary keys from objects, remove temporary files, clear cached data, and perform cleanup operations on directories and file structures.",
+        "url": 254
+    },
+    {
+        "nl_input": "The query requests a method to calculate the Euclidean distance between two vectors in Python. The desired functionality involves taking two numerical vectors as input and returning the square root of the sum of squared differences between corresponding elements.",
+        "url": 466
+    },
+    {
+        "nl_input": "The query seeks to implement or understand color output in a Python interactive shell. The referenced code suggests using functions like `set_color`, `cprint`, and `_write_color_colorama` to control text foreground, background, and style in terminal output, likely leveraging libraries such as `colorama`.",
+        "url": 1007
+    },
+    {
+        "nl_input": "The query requires a Python function to process a range of years, generating or calculating values across that range. It likely involves date handling, time spans, or growth calculations over multiple years. The function should accept start and end year inputs and perform operations such as creating date ranges, computing durations, or measuring annual growth.",
+        "url": 3206
+    },
+    {
+        "nl_input": "The query requires processing a YAML file in Python, specifically handling key-value pairs. It involves reading a YAML file, converting its contents into parameters, and writing dictionary data back to a YAML file with proper formatting. The functions needed include loading YAML data, converting it to usable values, and writing dictionaries to YAML files.",
+        "url": 1351
+    },
+    {
+        "nl_input": "The query seeks to determine how to check if a given value is a `ctypes` array in Python. The provided code examples focus on working with arrays and data types, including checking for NumPy arrays of specific types (integer or floating-point), but none directly test if a value is a `ctypes` array.",
+        "url": 5116
+    },
+    {
+        "nl_input": "The query seeks a Python function that executes an asynchronous operation and returns its result synchronously. It requires applying a function with optional arguments and waiting for the outcome. The implementation should handle async execution, potentially using threads or event loops, and provide a synchronous return value.",
+        "url": 4964
+    },
+    {
+        "nl_input": "The query requires a Python function to reload or restart a program or device. The function should potentially include saving configurations, sending reload commands, and handling confirmation prompts like \"y\" when needed. It may also involve autoreloading modules for development purposes.",
+        "url": 4804
+    },
+    {
+        "nl_input": "The query requires a Python function to split a string into segments, each containing a specified number of characters. The function should evenly divide the string into parts of length `n` or `chars_per_string`, with any remaining characters forming the final, shorter segment if necessary.",
+        "url": 424
+    },
+    {
+        "nl_input": "The query seeks a Python function to convert an object into a dictionary, excluding private attributes (those starting with '_'). It includes handling for objects that are already dictionaries and retrieves attributes dynamically using either inspection or provided attribute names.",
+        "url": 650
+    },
+    {
+        "nl_input": "The query describes an issue where selecting a range of 2D elements from a NumPy array results in an empty array in Python 3. This suggests a problem with array slicing or indexing, possibly due to incorrect slice bounds, shape mismatches, or improper use of indexing methods when extracting subarrays from a 2D NumPy array.",
+        "url": 5815
+    },
+    {
+        "nl_input": "The query requires a Python function that reads and yields individual tokens from a given line of text. The function should split the line into tokens, ensuring that only non-empty tokens are returned. This functionality is used for processing lines into meaningful token sequences, suitable for tasks like parsing or data extraction.",
+        "url": 6106
+    },
+    {
+        "nl_input": "The query requires writing data into a FITS file using Python. The desired functionality includes creating a Primary HDU, setting header information, and writing the data to a file with overwrite capability. A suitable function logs the write operation.",
+        "url": 1138
+    },
+    {
+        "nl_input": "The query seeks a Python function to print strings with visible ANSI color codes. The desired functionality includes applying foreground and background colors to text, writing the output to standard output (or similar), and ensuring proper handling of color resets and output flushing.",
+        "url": 2234
+    },
+    {
+        "nl_input": "The query requires a Python function to check if a given value exists within an enumeration. The function should return a boolean indicating presence and optionally provide an error message if the value is not found in the enum values.",
+        "url": 5812
+    },
+    {
+        "nl_input": "The query seeks to retrieve the names of tables in an SQLite database using Python. The provided functions execute an SQL query on the `sqlite_master` table to fetch table names and return them as a list, utilizing different variable names and minor variations in implementation.",
+        "url": 716
+    },
+    {
+        "nl_input": "The query asks how to remove all elements from a Python dictionary. The provided functions demonstrate different approaches to removing elements based on conditions such as value matching or key presence, which align with the need to filter and remove specific entries from a dictionary.",
+        "url": 5748
+    },
+    {
+        "nl_input": "The query requires a Python function to parse a query string from a URL by splitting it into key-value pairs, decoding the values, and returning them as a dictionary.",
+        "url": 2201
+    },
+    {
+        "nl_input": "The query seeks a Python function to remove a specified element from a set or set-like structure. The function should handle both standard sets and customized set objects, using appropriate removal methods such as `remove` or direct deletion, ensuring compatibility with different set implementations.",
+        "url": 3147
+    },
+    {
+        "nl_input": "Calculate the Manhattan distance between two points using their coordinates, typically for geographic data like longitude and latitude. The implementation should handle arrays or lists, ensure equal vector lengths, and compute the sum of absolute differences.",
+        "url": 1828
+    },
+    {
+        "nl_input": "The query asks how to read content from a file into a list in Python. The relevant code opens a file, reads all lines using `readlines()`, and returns them as a list. This method handles the file reading process efficiently and stores each line as an element in the resulting list.",
+        "url": 3132
+    },
+    {
+        "nl_input": "The query seeks a method to dynamically update values in a dictionary in Python. The provided code examples illustrate different approaches to achieve this, including updating a dictionary with another dictionary or keyword arguments, updating dictionary values based on object attributes, and creating a new updated dictionary while preserving the original. These methods enable dynamic dictionary updates in various scenarios.",
+        "url": 2899
+    },
+    {
+        "nl_input": "The query requires a Python function to replace occurrences of a substring in a string starting from the right side. The replacement should allow specifying the number of replacements to perform and default to replacing just one occurrence.",
+        "url": 5625
+    },
+    {
+        "nl_input": "To check if a path is writable in Python, the code uses `os.path.isdir(path)` to verify it's a directory and `os.access(path, os.W_OK)` to check write permissions. The relevant function `_writable_dir` combines these checks to determine if a directory is writable.",
+        "url": 651
+    },
+    {
+        "nl_input": "The query seeks to determine the type of an attribute in Python. The relevant code should retrieve or identify the type of a given attribute, potentially involving methods for handling custom types, built-in types, or attributes from objects with a method resolution order (MRO).",
+        "url": 1522
+    },
+    {
+        "nl_input": "The query seeks to retrieve or describe the fields of an object in Python, potentially involving attributes, lists, and references. The code should provide a method or function that extracts field data from an object, possibly returning values, types, and associated information in a structured format.",
+        "url": 1849
+    },
+    {
+        "nl_input": "To fetch a single value from one row using a MySQL query in Python, execute the query and retrieve the first column of the result. If no result is found, return `None`. The function should handle database execution and connection closure appropriately.",
+        "url": 5806
+    },
+    {
+        "nl_input": "The query requires adding routes in a Flask application, specifically focusing on integrating Swagger for API documentation. The routes should include endpoints for both JSON and HTML views of the Swagger documentation. Additionally, there is a need to initialize an API with resources and register blueprints.",
+        "url": 3536
+    },
+    {
+        "nl_input": "The query seeks to define a Python function with specified argument types and default values. It focuses on extracting or setting default parameter values, determining argument types, and potentially using tools like `argparse` or introspection for handling function arguments effectively.",
+        "url": 139
+    },
+    {
+        "nl_input": "The query seeks to determine the shape of an image in Python, primarily by checking if the object has a 'shape' attribute, and if not, retrieving it via a method. The solution should return the dimensions of the image data, accommodating different image object types.",
+        "url": 2021
+    },
+    {
+        "nl_input": "In Python, iterators can be iterated only once because they maintain internal state and become exhausted after reaching the end. The provided codes demonstrate iterator handling, including peeking, tracking iterations, and asserting single-element iteration, highlighting the one-time traversal nature of iterators.",
+        "url": 2052
+    },
+    {
+        "nl_input": "The query requires a Python function to remove all specified characters from a string. The desired code should iterate through the characters or values provided and replace them in the string, returning the modified result. The functionality should closely resemble the `remove_from_string` function, which removes each value from the input string and returns the cleaned string.",
+        "url": 1217
+    },
+    {
+        "nl_input": "The query requires generating a bitmap array representing a circle inscribed in a square using Python. The code should create a square image with a centered circle, suitable for output as a PNG file.",
+        "url": 4850
+    },
+    {
+        "nl_input": "The query is asking for the location of the Maya Python executable. The relevant code would need to retrieve or construct the path to the Python executable within a Maya environment, potentially involving environment variables or platform-specific paths.",
+        "url": 4771
+    },
+    {
+        "nl_input": "The query asks how to make letters uppercase in Python while skipping spaces. The desired function should process a string, convert all alphabetic characters to uppercase, and leave spaces unchanged. None of the provided functions fulfill this exact requirement, as they focus on lowercase conversion, string splitting, or camel case formatting rather than selectively skipping spaces during capitalization.",
+        "url": 5661
+    },
+    {
+        "nl_input": "The query seeks to remove a specific element from a set in Python. The provided code examples illustrate various methods to delete elements, including `discard`, `remove`, and `__delitem__` approaches. The ideal solution would involve using the `discard()` method or `remove()` function depending on whether an exception is needed upon absence of the element.",
+        "url": 5741
+    },
+    {
+        "nl_input": "The query seeks a Python function to retrieve the current Git branch name. It involves executing a Git command via Python's subprocess module, capturing the output, and processing it to return the branch name cleanly.",
+        "url": 421
+    },
+    {
+        "nl_input": "To create a restart button in Python, implement a function that re-executes the current script using `sys.executable` and `os.execl`, effectively restarting the program when triggered by the button.",
+        "url": 2293
+    },
+    {
+        "nl_input": "The query seeks to trace Python code execution using a tracing function that handles line events and other trace events, as seen in the provided code. It involves setting up a trace callback with `sys.settrace` to monitor program flow, potentially for debugging or analysis purposes. The implementation includes nested tracing functions and hooking into the Python debugger.",
+        "url": 2799
+    },
+    {
+        "nl_input": "The query requires a Python script to delete `.pyc` files. The relevant code should traverse directories, identify `.pyc` files, and remove them. Additionally, it may include cleaning other temporary Python files like `.pyo`, `~` files, and `__pycache__` directories.",
+        "url": 4126
+    },
+    {
+        "nl_input": "The query seeks a Python implementation that handles sleeping or delaying execution, potentially with asynchronous capabilities. It implies the need for a function that can pause operations for a specified time, possibly within event loops or coroutines, and may involve handling interruptions or concurrency considerations.",
+        "url": 2206
+    },
+    {
+        "nl_input": "The query requires a Python function to traverse a tree structure. The provided code includes a recursive generator function `walk_tree` that yields nodes in a depth-first manner, which fulfills the traversal requirement. Other codes involve mapping over a tree and converting a structure to a tree, which are less relevant. Score: 90/100 for `walk_tree`, 60/100 for others.",
+        "url": 1282
+    },
+    {
+        "nl_input": "The query seeks a Python function to measure the execution time of another function call. It should return both the result of the function and its execution duration, or optionally log the timing information with a specified log level.",
+        "url": 5785
+    },
+    {
+        "nl_input": "The query asks how to stop the `playsound` module in Python. The relevant code would involve a `stop` method that checks if audio is playing and then halts it, potentially involving state changes or logging. A suitable solution would likely resemble the provided `stop` functions, which manage playback state and invoke stopping logic.",
+        "url": 4166
+    },
+    {
+        "nl_input": "The query seeks a Python function to modify dictionary values in place within a list of dictionaries. Specifically, it requires updating the value for a given key across all dictionaries in the list. The relevant code defines a function `dictlist_replace` that accepts an iterable of dictionaries, a key, and a value, then updates each dictionary with the new value for the specified key.",
+        "url": 6132
+    },
+    {
+        "nl_input": "Yes, you can pass an instance method as a variable in Python. The provided code demonstrates handling instance methods by normalizing them into functions that can be passed around while preserving their associated instance. This is achieved by wrapping the instance method and retaining its properties, allowing it to behave like a regular function while maintaining access to the instance's data.",
+        "url": 4536
+    },
+    {
+        "nl_input": "The query requires a Python function to read and unpickle the entire contents of a file. It should open the file in binary read mode, use the `pickle` module (or similar, like `dill`), handle potential errors, and return the deserialized object. The function must load the complete data structure stored in the pickle file.",
+        "url": 4715
+    },
+    {
+        "nl_input": "When concatenating two DataFrames in Python, the number of columns does not need to be equal. However, for a cross join, a temporary key is added to both DataFrames before merging to ensure all combinations are formed, and then the combined column set is preserved.",
+        "url": 793
+    },
+    {
+        "nl_input": "The query seeks a Python function to flatten a deeply nested list structure into a single-level list. The function should recursively handle nested lists and compile all elements into a flat list, regardless of their initial depth within the structure.",
+        "url": 1816
+    },
+    {
+        "nl_input": "The query seeks to determine how to format a floating-point number with a variable amount of precision in Python strings, specifically focusing on dynamic control of decimal places and formatting behavior.",
+        "url": 1446
+    },
+    {
+        "nl_input": "The query requires a Python function to retrieve an element from a list by index, returning a specified default value if the index is out of range. The function should handle index errors gracefully and ensure safe access to list elements.",
+        "url": 719
+    },
+    {
+        "nl_input": "The query seeks a Python function to determine if a given string represents an integer. The function should return `True` if the string is a valid integer (including optional leading '+' or '-'), and `False` otherwise.",
+        "url": 5776
+    },
+    {
+        "nl_input": "The query asks how to convert a NumPy array to a list in Python. The provided functions offer various approaches to convert different types of variables, including NumPy arrays, into lists by using conditional checks and conversion methods.",
+        "url": 856
+    },
+    {
+        "nl_input": "The query requires a Python function that reads a file and stores its lines into a set, removing any trailing whitespace. The function should return the resulting set of strings.",
+        "url": 5611
+    },
+    {
+        "nl_input": "The query seeks a function to round a floating-point number to the nearest integer in Python, prioritizing standard rounding behavior such as rounding half to even.",
+        "url": 323
+    },
+    {
+        "nl_input": "The query asks how to write a parser in Python. The provided code examples demonstrate the use of `argparse.ArgumentParser` for creating command-line argument parsers, including setting up root and sub-parsers, avoiding overwrites with a dictionary, and customizing parsers with functions like `default_parser`. One example also shows a function that uses a parser in combination with string input.",
+        "url": 3225
+    },
+    {
+        "nl_input": "The query seeks a Python function to remove keys with a specific value from a dictionary. The provided code examples demonstrate dictionary manipulation, including filtering out keys with a specified value and modifying keys. Specifically, one function removes keys whose values match a given value, another filters out null values and skips a specific key, and the third converts keys to strings. The main requirement is to filter dictionary entries based on their values or modify keys.",
+        "url": 193
+    },
+    {
+        "nl_input": "The query seeks a Python method to remove blank lines from a text file. The referenced functions process a string, split it into lines, filter out empty or whitespace-only lines, and rejoin the remaining lines with newline characters. They achieve the desired result by using combinations of string and list operations.",
+        "url": 3099
+    },
+    {
+        "nl_input": "To hash a binary file in Python, read the file in binary mode using a buffer, update the hash object with each chunk of data read, and return the final hash digest. The process involves opening the file, reading it in chunks (e.g., 65536 bytes), and updating the hasher iteratively to handle large files efficiently.",
+        "url": 3336
+    },
+    {
+        "nl_input": "The query seeks to extract the names of keyword arguments (including optional values) from a Python function definition, using either source code parsing or inspection methods. It references functions that handle argument extraction, including positional and keyword parameters, with compatibility across Python versions.",
+        "url": 3562
+    },
+    {
+        "nl_input": "The query requires a Python function to iterate through words in a text file, processing each word for further analysis such as frequency counting or extraction. The function should read the file line by line and yield or return each word, enabling downstream tasks like building a word frequency dictionary or a counter.",
+        "url": 2261
+    },
+    {
+        "nl_input": "The query requires a Python function to send a PUT request to a RESTful endpoint. The function should handle the endpoint URL and arbitrary keyword arguments, returning a dictionary response. It must utilize an internal `_request` method, passing along the HTTP method, endpoint, and any additional parameters.",
+        "url": 6123
+    },
+    {
+        "nl_input": "The query requires obtaining the ID of the currently executing thread in Python. The relevant code demonstrates retrieving the current thread's identifier using `self.thread.ident` or an alternative approach involving `sys._current_frames()` to access thread information. It implies working with threading diagnostics or monitoring within a Python application.",
+        "url": 2525
+    },
+    {
+        "nl_input": "The query requires a Python function that returns a list of all entities. The function should process input entities and return them, potentially filtered or transformed based on specific criteria, possibly involving attributes or asynchronous processing as indicated by the provided code examples.",
+        "url": 2850
+    },
+    {
+        "nl_input": "The query asks for methods to flatten a list of lists in Python. The provided functions demonstrate different approaches to recursively or iteratively unpack nested lists into a single-level list, using generators, list comprehensions, or type annotations.",
+        "url": 5658
+    },
+    {
+        "nl_input": "The query requires a Python function to read a YAML file and convert its contents into a NumPy array. The provided code includes functions for loading YAML files and converting NumPy arrays to YAML, but lacks a direct method to load YAML data into a NumPy array.",
+        "url": 6117
+    },
+    {
+        "nl_input": "The query requires a method to retrieve a Discord user object from a given ID string using Python. The ideal solution would involve accessing the user directly through an API or database, similar to `get_user_by_id` or `get_chat_member`, with proper handling of ID conversion to string.",
+        "url": 620
+    },
+    {
+        "nl_input": "The query requires a function that takes a list of arbitrary objects and returns counts for each object. The desired functionality involves iterating through the input, tallying occurrences, and returning a structured result with each item and its corresponding count.",
+        "url": 5768
+    },
+    {
+        "nl_input": "To determine the size of a queue in Python, you can use the `qsize()` method, which acquires a lock, calculates the size via `_qsize()`, and then releases the lock to ensure thread safety.",
+        "url": 425
+    },
+    {
+        "nl_input": "The query seeks methods in Python to impute missing values in data. The provided codes demonstrate techniques using `Imputer` from scikit-learn, median-based filling, and custom functions for handling missing values in arrays or pandas Series.",
+        "url": 3840
+    },
+    {
+        "nl_input": "The query seeks to rank items in a Python dictionary based on their values, with possible support for sorting in descending order and returning either a dictionary or tuple. The desired functionality includes extracting and normalizing ranked values, potentially handling nested structures and providing flexibility in output format.",
+        "url": 5999
+    },
+    {
+        "nl_input": "The query requires a Python function to generate a short, unique ID. The ID should be customizable in length and character set, and randomness is important to ensure uniqueness.",
+        "url": 335
+    },
+    {
+        "nl_input": "The query requires finding the inverse of a matrix using Python's NumPy library. The provided code examples demonstrate the use of `np.linalg.inv()` to compute the matrix inverse, with additional handling for edge cases like non-invertible matrices and optional adjoint computation.",
+        "url": 2512
+    },
+    {
+        "nl_input": "The query seeks to understand how to handle a file path in Python that contains both backslashes and forward slashes, focusing on normalization or replacement of the slash characters to ensure correct path formatting.",
+        "url": 1288
+    },
+    {
+        "nl_input": "The query seeks to address the absence of a `reduce` function in Python by defining it. It provides an implementation that mimics `reduce` using a custom function with optional initial value support, aligning with functional programming needs.",
+        "url": 3964
+    },
+    {
+        "nl_input": "The query seeks Python code to detect key presses in a Linux environment. The provided references involve methods like `keyPressEvent`, `on_key_press`, and `on_press_key` for capturing key events, indicating a need for real-time keyboard input handling, likely for applications such as keylogging, game controls, or interactive UIs.",
+        "url": 5666
+    },
+    {
+        "nl_input": "The query seeks a method to generate a random binary tree in Python. The provided codes include functions for retrieving random leaf nodes from an existing binary tree, creating a decision tree model, and generating random integers. However, none of the code snippets directly construct or generate a random binary tree structure.",
+        "url": 5871
+    },
+    {
+        "nl_input": "The query requires a Python function to convert a given datetime object into epoch milliseconds. The function should calculate the number of milliseconds that have elapsed since the Unix epoch (January 1, 1970, UTC) and return it as an integer.",
+        "url": 459
+    },
+    {
+        "nl_input": "The query seeks a Python function to retrieve the current user's name specifically on Windows systems by accessing environment variables such as 'USERNAME'. The solution should handle different platforms by checking `sys.platform`, and return the appropriate user value using `os.getenv()`.",
+        "url": 965
+    },
+    {
+        "nl_input": "The query seeks to determine how to check if an iterator in Python has reached the end. The provided code examples demonstrate handling iteration and detecting the last item, particularly by using exceptions like `StopIteration` and techniques such as lagging during iteration to identify the end.",
+        "url": 659
+    },
+    {
+        "nl_input": "Check if a file exists, and if not, create the file or its directory path to ensure the file can be generated without errors.",
+        "url": 1598
+    },
+    {
+        "nl_input": "The query asks how to determine if a provided path in Python is absolute or relative. It seeks a method or function that can evaluate a given path and return whether it is an absolute path (e.g., starting with a drive letter or root directory) or a relative path (relative to the current working directory or file).",
+        "url": 5758
+    },
+    {
+        "nl_input": "Convert a given string to lowercase, handling cases where characters may be uppercase or mixed, and potentially transforming the string by appending underscores before lowercase letters, depending on context.",
+        "url": 1763
+    },
+    {
+        "nl_input": "The query seeks a method to write output to `sys.stdout` with proper newline handling, ensuring immediate display by flushing the buffer. It emphasizes using `sys.stdout.write` rather than `print`, and highlights the importance of managing newlines and buffer flushing when writing to standard output in Python.",
+        "url": 3858
+    },
+    {
+        "nl_input": "The query asks how to create an iterable in Python. The referenced codes provide related functionalities: checking if an object is iterable, ensuring an object is converted to an iterable (e.g., list), and a method that initializes an object from an iterable. These support the creation or handling of iterables programmatically.",
+        "url": 570
+    },
+    {
+        "nl_input": "The query seeks to understand how to use Python functions within TensorFlow. The provided code examples demonstrate using TensorFlow's `convert_to_tensor` function, handling TensorFlow version compatibility, and utilizing TensorFlow utilities like `nest.flatten`. The focus is on integrating standard Python constructs with TensorFlow operations for tensor conversion and version management.",
+        "url": 4349
+    },
+    {
+        "nl_input": "The query asks how to get the range of an array with positive values using NumPy in Python. It seeks a method or function that can generate a numerical range, potentially involving start, stop, and step parameters, and ensure positivity of values within the array.",
+        "url": 140
+    },
+    {
+        "nl_input": "The query requires a Python function that builds a string from an iterable. The desired functionality involves joining elements of the iterable into a single string, ideally using a comma as the separator. The function should handle conversion of each item to a string format, particularly supporting Unicode and ensuring compatibility with both Python 2 and 3 through libraries like `six`.",
+        "url": 160
+    },
+    {
+        "nl_input": "The query seeks a method to uncheck a radio button using Python. The provided code includes functions related to unchecking checkboxes, interacting with UI elements, and setting values. However, none of the snippets specifically demonstrate how to uncheck a radio button, as opposed to a checkbox or generic toggle.",
+        "url": 1582
+    },
+    {
+        "nl_input": "The query requires a Python function that checks both the type and size of a parameter list, ensuring it is a list with a specific number of elements. When the input does not meet these conditions, it should raise a `ValueError` with a descriptive message indicating the expected number of elements.",
+        "url": 1319
+    },
+    {
+        "nl_input": "The query requires a Python function to load CSV data into a NumPy array. The preferred solution uses `np.genfromtxt` with a `StringIO` stream, allowing for flexible data input and optional dtype specification.",
+        "url": 5746
+    },
+    {
+        "nl_input": "The query seeks information on the time complexity of removing an element from a list in Python, specifically examining methods that remove elements by index or value and understanding their efficiency.",
+        "url": 837
+    },
+    {
+        "nl_input": "The query seeks a Python method to retrieve a property by its string name. The preferred solution involves iterating through an object's properties and returning the first match by name. A deprecated alternative exists, but the main implementation should be used instead.",
+        "url": 2898
+    },
+    {
+        "nl_input": "The query seeks a Python function to find the index of an entry in a list, supporting both numeric indices and item names. The function should return the corresponding index, with possible handling of custom list-like objects and reverse indexing.",
+        "url": 2444
+    },
+    {
+        "nl_input": "The query seeks to determine how to check if an object is iterable in Python. It explores different approaches using type checks, interface checks (`__iter__`), and excludes specific types like strings or tuples from being considered iterable. The goal is to identify a reliable method to detect iterable objects in Python.",
+        "url": 2522
+    },
+    {
+        "nl_input": "The query asks how to create a date object from a string in Python. The provided functions demonstrate three methods using `dateutil.parser.parse()`, `datetime.datetime.strptime()`, and `time.strptime()` to convert a string into a date object, assuming specific date formats.",
+        "url": 5766
+    },
+    {
+        "nl_input": "To append a line in the middle of a file in Python, read the file lines into a list, insert the new line at the desired position using `list.insert()`, and then write the modified lines back to the file.",
+        "url": 629
+    },
+    {
+        "nl_input": "The query asks how to split a string by every character in Python. The desired functionality involves processing a string and separating it at each individual character, likely resulting in a list of single-character strings or substrings divided at specific character boundaries.",
+        "url": 1545
+    },
+    {
+        "nl_input": "The query seeks a Python function that returns the index of an element each time it appears in a list. The desired functionality involves retrieving all occurrence positions of a given element within a list, not just the first occurrence.",
+        "url": 6214
+    },
+    {
+        "nl_input": "The query asks how to create or use a dot character in Python. The relevant code defines a method `_dotify` that replaces non-printable characters with a dot (`.`) and returns the modified string. This indicates the need to represent non-printable data using dot characters.",
+        "url": 2350
+    },
+    {
+        "nl_input": "The query seeks a Python function to retrieve and remove the top-priority element from a heap. It requires handling empty heaps appropriately, maintaining heap properties after removal, and potentially managing additional data structures for tracking elements.",
+        "url": 400
+    },
+    {
+        "nl_input": "The query asks how to print strings in different colors in Python. The provided code snippets demonstrate color-printing functionality using custom functions that apply foreground and background colors to strings, utilizing modules like `colorama` or similar for terminal color support.",
+        "url": 1026
+    },
+    {
+        "nl_input": "The query seeks to understand the usage of the `yield` keyword in Python, particularly in generator functions that handle exceptions, transform data, or generate sequences. It explores how `yield` is used to produce values iteratively while maintaining function state, and may be interested in common patterns or pitfalls involving its use with iteration and exception handling.",
+        "url": 4402
+    },
+    {
+        "nl_input": "The query asks for a method to sort files by their filenames in Python. The provided code examples include sorting filenames using `os.path.basename` and returning sorted file paths based on filename, which matches the requirement of sorting files by their names.",
+        "url": 707
+    },
+    {
+        "nl_input": "To change the axis range in a plot in Python for subplots, you can use methods like `set_xlimits` or `set_ylimits` on a subplot object, specifying the desired `min` and `max` values for the respective axis. These methods allow setting custom ranges for individual subplots within a grid layout.",
+        "url": 3455
+    },
+    {
+        "nl_input": "The query seeks to convert a 3D view vector into azimuth and elevation angles, typically involving coordinate transformations from world or Euler angles to spherical coordinates. It implies the need for trigonometric calculations to derive angular orientation relative to a viewpoint.",
+        "url": 3293
+    },
+    {
+        "nl_input": "The query requires a Python function to sort data based on one or more variables. The input may include parallel lists, a data structure with columns, or objects with attributes like \"name\". The desired output should return the sorted data, potentially rearranging multiple dependent variables while preserving their association.",
+        "url": 3198
+    },
+    {
+        "nl_input": "To compute the middle index in a list for finding the median in Python, the list is first sorted. When the list length is even, the median is the average of the two middle elements; when odd, it is the middle element directly. Sorting and index calculation are key steps.",
+        "url": 1588
+    },
+    {
+        "nl_input": "The query requires a Python function to dump JSON data to a file in a readable format. The function should support indentation for pretty-printing, and may involve handling special data types like NumPy objects or NaN values. File writing should be handled efficiently.",
+        "url": 2462
+    },
+    {
+        "nl_input": "The query seeks a Python function to remove dictionary keys based on a specific condition. The provided examples demonstrate removing keys by value (e.g., `None` or a specified value) or by a list of keys. The main requirement is to filter out unwanted key-value pairs from a dictionary based on a given condition, returning the modified dictionary.",
+        "url": 185
+    },
+    {
+        "nl_input": "The query seeks a Python function to remove a directory tree only if it contains no files. The function should check for empty directories and delete them recursively without causing errors if the directory does not exist or contains no files.",
+        "url": 1906
+    },
+    {
+        "nl_input": "To pop a node off a stack in Python, the `pop()` method is used to remove and return the last element of the stack. This operation modifies the stack by deleting the top element, typically implemented using a list where the last item represents the top of the stack.",
+        "url": 47
+    },
+    {
+        "nl_input": "The query seeks to open a file in Python with exclusive access permissions, ensuring that no other processes can simultaneously write to or modify the file during the operation.",
+        "url": 1152
+    },
+    {
+        "nl_input": "The query seeks to understand how to integrate `gevent` with multiprocessing in Python. It explores techniques for patching with `gevent`, falling back to multithreading when `gevent` is unavailable, and spawning tasks using greenlets. The focus is on managing concurrency by combining cooperative multitasking (via `gevent`) and parallel execution (via multiprocessing or multithreading).",
+        "url": 478
+    },
+    {
+        "nl_input": "The query seeks a Python `copy` function or method that creates a copy of an object without modifying the original, potentially using deep copying or custom logic. It references implementations involving `deepcopy`, dictionary copying, or assignment-based duplication.",
+        "url": 1395
+    },
+    {
+        "nl_input": "The query requires a Python function to remove trailing whitespace from a string, including handling line breaks, tabs, and consecutive spaces, ensuring the final string is trimmed and formatted correctly.",
+        "url": 2581
+    },
+    {
+        "nl_input": "The query requires a Python implementation for selecting a default MenuItem, handling cases where the default option is unavailable or the menu is empty, with appropriate error handling and index-based selection logic.",
+        "url": 3498
+    },
+    {
+        "nl_input": "The query seeks a method to obtain the sort indexes of a list in Python, which refers to the indices that would sort the list. The relevant code uses `np.argsort()` to return the indices that sort the input list in ascending order. Other provided codes relate to natural sorting and finding an element's index in a sorted sublist but are not directly relevant to obtaining sort indexes for a full list.",
+        "url": 2034
+    },
+    {
+        "nl_input": "The query is asking about how to start a new line in a Python GUI. The provided code snippets offer different methods for handling new lines, including inserting a line separator, ensuring a newline with cursor positioning, and adding a string at a specific line in a windowed interface. These suggest using functions that handle newlines either via text insertion or terminal control sequences depending on the GUI framework.",
+        "url": 428
+    },
+    {
+        "nl_input": "The query seeks a method to extract a tuple of RGB color values from an image in Python. The provided code includes functions related to retrieving pixel colors, converting hex colors to tuples, and fetching all pixel colors, which align with the need to obtain color data from an image.",
+        "url": 1551
+    },
+    {
+        "nl_input": "The query seeks a Python function to make a datetime object \"aware\" of its time zone. The ideal solution involves attaching a time zone (e.g., UTC) to a naive datetime, either by replacing `tzinfo` or using a timezone's `localize` method, ensuring correct handling around DST transitions if possible.",
+        "url": 1753
+    },
+    {
+        "nl_input": "The query seeks a Python function to remove keys with empty values from a dictionary. The desired functionality involves filtering out key-value pairs where the value is empty, potentially using dictionary comprehension or iteration to achieve the result.",
+        "url": 1017
+    },
+    {
+        "nl_input": "The query requires a Python function to pretty-print a dictionary or JSON object without sorting the keys. The provided code examples all use sorting by default (`sort_keys=True`), which does not meet the requirement. A correct implementation should set `sort_keys=False` in the `json.dumps()` call to preserve the original key order during pretty printing.",
+        "url": 2225
+    },
+    {
+        "nl_input": "The query seeks to determine whether a Python process is running interactively. The code should check for an interactive environment, potentially considering standard input/output streams, terminal attributes, and special environments like IPython. It may involve system-specific checks, exception handling, and importing relevant modules to accurately detect interactivity.",
+        "url": 2779
+    },
+    {
+        "nl_input": "The query requires a method to determine if a process with a given PID exists in Python. The solution should involve checking the existence of a process, potentially using system calls or utilities like `os.kill()` or `psutil.pid_exists()`.",
+        "url": 528
+    },
+    {
+        "nl_input": "The query seeks a Python method using `pymongo` to insert a document into a MongoDB collection without causing duplicates. The ideal solution should handle single document insertion, avoid duplication, and potentially use upsert behavior or unique constraints to ensure data integrity during the insert operation.",
+        "url": 4267
+    },
+    {
+        "nl_input": "To read JSON files with multiple objects in Python, use the `json.load()` function within a context manager to open and parse the file. The provided examples demonstrate reading JSON data into a variable and returning it. A basic function can be defined to handle this task efficiently.",
+        "url": 3131
+    },
+    {
+        "nl_input": "The query seeks a method or command to disconnect or leave a voice channel in a Discord bot using Python. The focus is on identifying code that facilitates leaving a voice channel, as opposed to joining or managing text channels.",
+        "url": 1923
+    },
+    {
+        "nl_input": "The query seeks a method to make Python unit tests discoverable, automatically finding and running test cases within a project. It involves using the `unittest` module's discovery feature to locate and execute tests in a specified directory, typically organizing and running tests without manual specification of individual test files.",
+        "url": 199
+    },
+    {
+        "nl_input": "The query seeks a Python function to send a multiline text message. The ideal solution involves a function that can handle sending text messages, preferably supporting asynchronous operations and maintaining session state if needed. It should allow passing the message content easily.",
+        "url": 1510
+    },
+    {
+        "nl_input": "The query requires a Python function to extract integers from a string. The desired functionality involves identifying numeric characters within a given string and converting them into integers, potentially handling cases with non-numeric characters or invalid inputs. The output should be one or more integers extracted directly from the string content.",
+        "url": 2828
+    },
+    {
+        "nl_input": "The query requires a Python function that processes a string following a title, potentially involving formatting, extracting, or modifying the title text. It seeks operations such as string replacement, case manipulation, and token handling to generate a properly formatted title string output.",
+        "url": 4355
+    },
+    {
+        "nl_input": "The query asks for a method to randomly select rows from an ndarray in Python. Among the provided code options, the most relevant approach involves using NumPy's `random.shuffle` function to shuffle the array in place, which effectively allows for random row selection. This is demonstrated in the second code snippet, where the array is copied and then shuffled using a specified seed for reproducibility.",
+        "url": 794
+    },
+    {
+        "nl_input": "To open a file with a given path in Python, use the built-in `open()` function or utilities like `io.open()` or `codecs.open()`. The file path can be absolute or relative, and the appropriate mode (e.g., \"r\" for reading) should be specified. Context managers (`with` statements) are recommended for safe handling.",
+        "url": 1051
+    },
+    {
+        "nl_input": "The query requires calculating the distance between two vectors in Python. The code examples provided implement various approaches, including using a custom `Vector2` class with a `length()` method, utilizing NumPy's `linalg.norm`, and manually computing Euclidean distance with a loop. Overall, the goal is to determine the distance between two vector points in a vector space.",
+        "url": 2719
+    },
+    {
+        "nl_input": "The query seeks a Python function to determine the dimensions of a nested list or array-like structure. It should recursively identify the length at each level, handling lists, tuples, and stopping appropriately when elements are not iterable. The expected output is a list representing the dimensions, such as `[rows, columns]` for a 2D list.",
+        "url": 2080
+    },
+    {
+        "nl_input": "The query requires a Python implementation of a low-pass filter with a minimum cutoff frequency. The desired functionality involves filtering signals by attenuating frequencies below a specified minimum threshold, using methods appropriate for digital signal processing tasks.",
+        "url": 1552
+    },
+    {
+        "nl_input": "The query requires a Python function that splits a string into a list using a comma as the delimiter. It should handle input validation, returning an empty list if the input is neither a string nor a list. The function should return the original list if the input is already a list, and split the string by commas if it is a string.",
+        "url": 3278
+    },
+    {
+        "nl_input": "To delete an element in a Python dictionary, you can use methods like `pop()` to remove a specific key-value pair. The code examples demonstrate techniques for deleting elements, including handling key removal, ignoring errors, and filtering out values. One approach involves removing keys with a specific value using dictionary comprehension.",
+        "url": 5594
+    },
+    {
+        "nl_input": "The query seeks to determine how to check if a checkbox is selected in Python. The relevant code would involve retrieving the checkbox state, typically using a method like `get_attribute('checked')` or `isChecked()` depending on the framework. The requirement is to evaluate the checkbox's selected state and perform actions based on that condition.",
+        "url": 1655
+    },
+    {
+        "nl_input": "The query seeks a Python function to check if a value is a scalar. The suitable code defines `is_scalar`, which returns `True` if the input is a scalar or a zero-dimensional NumPy array.",
+        "url": 2107
+    },
+    {
+        "nl_input": "The query seeks to generate Gaussian (normal) distributed noise in Python. The desired functionality involves adding random noise with a specified standard deviation to a dataset, typically using NumPy's `np.random.normal` function.",
+        "url": 551
+    },
+    {
+        "nl_input": "The query seeks to determine the number of numeric attributes in a Python object. It requires identifying attributes that are numeric (e.g., integers or floats) and counting them. The solution should involve checking each attribute's type to verify if it is a number and then returning the total count of such attributes.",
+        "url": 4818
+    },
+    {
+        "nl_input": "The query requires capturing an image using a camera, converting it into a PIL image object for processing. The code should handle in-memory streams to avoid saving images to disk, and efficiently convert or transfer the image data for further use.",
+        "url": 3731
+    },
+    {
+        "nl_input": "The query requires creating a cookie with an expiration in Flask. The relevant code sets a cookie with an expiration using `response.set_cookie()` where the `expires` parameter is provided by a function like `one_year_from_now()`. Other code snippets are for reading or parsing cookies, which do not meet the requirement.",
+        "url": 1809
+    },
+    {
+        "nl_input": "The query requires a Python SQLAlchemy utility to convert a SQLAlchemy query into a raw SQL string with literal binds, allowing direct inspection or logging of the generated SQL statement.",
+        "url": 3229
+    },
+    {
+        "nl_input": "The query is asking about how to proceed to the next command in a for loop in Python. It seeks a method or mechanism that allows control to move to the next command within an iteration, potentially involving stepping through commands and handling iterations manually.",
+        "url": 36
+    },
+    {
+        "nl_input": "The query seeks to determine how to check if an object is a character or string-like in Python, potentially involving custom types such as `IPAChar`, and may include functionality to convert non-string objects into strings.",
+        "url": 1789
+    },
+    {
+        "nl_input": "To achieve logarithmic complexity in Python, use functions that operate in logarithmic time or transform data using logarithmic operations. This can be done with NumPy's `np.log` function for element-wise logarithmic computation, or by designing algorithms that reduce problem size logarithmically, such as binary search or divide-and-conquer methods.",
+        "url": 1366
+    },
+    {
+        "nl_input": "The query seeks to implement a ListBox with a vertical Scrollbar in Python using Tkinter, where the Scrollbar is positioned based on the `compound` direction (left or right). The provided code demonstrates how to configure the grid layout for the ListBox and Scrollbar dynamically, ensuring proper alignment and functionality within a Frame.",
+        "url": 2585
+    },
+    {
+        "nl_input": "Find the number that appears most frequently in an array. The solution should efficiently count occurrences of each element and return the one with the highest frequency.",
+        "url": 5604
+    },
+    {
+        "nl_input": "The query requires a Python function to format a list of values into a table structure, handling cases where items may need conversion or formatting for proper display. It involves processing lists, potentially replacing special characters like newline, and ensuring compatibility with table representation.",
+        "url": 3949
+    },
+    {
+        "nl_input": "The query seeks a Python function to transform data to follow a normal distribution. The ideal method should standardize the data by subtracting the mean and dividing by the standard deviation, ensuring the output has zero mean and unit variance. This aligns with statistical normalization techniques for achieving normally distributed data.",
+        "url": 4155
+    },
+    {
+        "nl_input": "The query seeks to determine if a float value or array contains no fractional part, effectively behaving as an integer. It involves checking whether the value is a float type and verifying that it holds an integer value without any decimal points. The focus is on identifying such cases for both scalar values and arrays.",
+        "url": 5686
+    },
+    {
+        "nl_input": "The query requires a Python function to remove trailing whitespace or blank lines from a string. It focuses on eliminating the last blank space, implying a need for string trimming or filtering empty lines, especially at the end of the input.",
+        "url": 5725
+    },
+    {
+        "nl_input": "The query asks how to display object attributes in Python. The provided functions offer different approaches: formatting a string representation with attribute-value pairs, generating a dictionary of attributes, and returning a readable representation of the object's class and properties. They help achieve a clear display of an object\u2019s attributes and values for debugging or logging purposes.",
+        "url": 1533
+    },
+    {
+        "nl_input": "The query seeks to determine if a list of numbers contains duplicates by using Python functions that identify and return duplicate elements from the list. The provided code examples offer different implementations for finding or removing duplicates, with some returning sets or lists of duplicated values.",
+        "url": 5743
+    },
+    {
+        "nl_input": "The query requires adjusting the title label size in a Python figure. The relevant code should demonstrate how to set the font size of axis titles, particularly for y-axis labels. Additionally, it may involve global font size adjustments or figure sizing, but the primary focus is on modifying label text size for clarity and presentation purposes.",
+        "url": 4900
+    },
+    {
+        "nl_input": "Find the longest path in a directed acyclic graph (DAG) using NetworkX, where the function `dag_longest_path` computes the longest simple path between two nodes by iterating over all possible paths.",
+        "url": 5910
+    },
+    {
+        "nl_input": "The query is asking how to take a list as input in Python where the elements are separated by spaces. The code examples provided focus on splitting strings retaining spaces, converting list elements to a string with a separator, and converting comma-separated strings to lists. None of the provided functions directly address taking user input for a space-separated list. However, the functionality closest to the requirement is splitting strings while retaining spaces. To meet the query's need, a function that splits input using whitespace while preserving spaces would be appropriate.\n\nDescription:  \nThe query requires a method to split a string into a list using spaces as delimiters while retaining the spaces in the output.",
+        "url": 5110
+    },
+    {
+        "nl_input": "The query asks whether a list in Python is an array. The provided code includes functions that check if an item is a list, tuple, or array-like structure, and convert or validate such structures. The focus is on determining if a Python list can be considered similar to an array by examining its type and structure.",
+        "url": 2686
+    },
+    {
+        "nl_input": "The query requires calculating the cosine similarity between two vectors. Cosine similarity measures the cosine of the angle between two vectors, indicating their orientation similarity regardless of magnitude. The relevant code defines a function that computes this similarity using the dot product and vector magnitudes.",
+        "url": 4513
+    },
+    {
+        "nl_input": "The query seeks methods or functions in Python that can model a sphere. The provided codes include functionalities for mapping points onto a sphere, calculating spherical surfaces, and modeling sphere-related geometry. The requirement involves implementing or utilizing mathematical or geometric operations to represent a sphere programmatically in Python.",
+        "url": 1008
+    },
+    {
+        "nl_input": "The query seeks to determine how to check if a given value is a valid file path in Python, using logic that attempts to verify the existence of the path while handling potential errors.",
+        "url": 1644
+    },
+    {
+        "nl_input": "The query seeks to test the truth value of a list in Python, specifically checking if all elements in the list are equal or if exactly one element is `True`. It involves functions that assert conditions on list elements, with possible strict equality checks and handling of empty lists.",
+        "url": 69
+    },
+    {
+        "nl_input": "The query seeks to determine the string value of an enum in Python. The relevant code defines a method `from_string` that retrieves the enum value corresponding to a given string input, returning the string if no match is found and logging a warning.",
+        "url": 471
+    },
+    {
+        "nl_input": "The query seeks to understand how to create a null pointer using the `ctypes` library in Python. It refers to scenarios where a pointer is cast or constructed in such a way that it represents a null or empty reference, particularly useful when interfacing with C libraries that expect pointer types as arguments. The goal is to determine how to safely pass null pointers in C function calls using `ctypes`.",
+        "url": 1683
+    },
+    {
+        "nl_input": "The query requires a function to compute the MD5 hash of a string. Among the provided codes, the first one fulfills this requirement by taking a string input and returning its MD5 hash in hexadecimal form using Python's `hashlib` library.",
+        "url": 1193
+    },
+    {
+        "nl_input": "The query asks how to match dictionaries in Python. The provided code examples demonstrate methods for comparing dictionaries, including checking key-value equality recursively, finding common keys and values across multiple dictionaries, and asserting dictionary equality with custom error messages.",
+        "url": 556
+    },
+    {
+        "nl_input": "The query requires a Python function that selects specific elements from a list and removes those elements from the original list. The removal should be done in a way that does not affect the iteration or indexing of the remaining elements during the process, typically by deleting from the end first if multiple indices are involved.",
+        "url": 837
+    },
+    {
+        "nl_input": "The query seeks a function that converts a value to a boolean in Python 3, with support for string representations of boolean values. The function should return a boolean result based on the input value, utilizing `strtobool` for string inputs and direct conversion otherwise.",
+        "url": 257
+    },
+    {
+        "nl_input": "To add a query parameter to a URL in Python, check if the URL already contains a query string; if not, prepend `'?'`, otherwise append `'&'`. Construct the full URL with the new parameter(s) accordingly.",
+        "url": 4628
+    },
+    {
+        "nl_input": "Check if a process with a given PID exists by attempting to send signal 0 using `os.kill()`, which returns `True` if the process exists and is accessible, or `False` if it does not exist or access is denied.",
+        "url": 528
+    },
+    {
+        "nl_input": "The query seeks to determine how to check if something is a constant in Python. The provided code references functions that evaluate whether a value meets certain constant or static criteria, using checks like `isinstance`, custom helper functions (`is_CONST`, `is_const`, `is_number`), and attributes like `dtype`. These approaches help identify constants based on type, mangled name conventions, or numerical/static properties.",
+        "url": 1184
+    },
+    {
+        "nl_input": "The query requires a Python function to check if a variable exists in the local scope. The desired functionality involves inspecting the current or previous stack frames and examining the local variables dictionary (`f_locals`) to determine if a specified variable name exists.",
+        "url": 1793
+    },
+    {
+        "nl_input": "The query seeks a Python function to filter a dictionary by value, retaining only key-value pairs where the value does not match a specified input. The desired functionality is to remove items from a dictionary based on their value, as seen in the third code snippet provided.",
+        "url": 5644
+    },
+    {
+        "nl_input": "The query requires a Python function to read a JSON file and convert its contents into a dictionary. The function should open the file, parse the JSON data, and return it as a dictionary object.",
+        "url": 5563
+    },
+    {
+        "nl_input": "The query seeks a Python function to change the shape of a list into a specified structure, potentially involving type conversion. The provided code includes a relevant function that converts a list into a NumPy array, reshapes it, and returns the result.",
+        "url": 2814
+    },
+    {
+        "nl_input": "The query seeks to determine how to retrieve data types in Python, particularly within the context of database schemas or structured data. The provided code examples demonstrate methods for obtaining data types from a schema, database cursor, or column definition, typically returning them as strings or processed values. The requirement appears centered on introspecting or extracting type information from data structures or database fields programmatically.",
+        "url": 5803
+    },
+    {
+        "nl_input": "The query seeks to initialize an empty string with a specified size in Python. The provided code snippets are not directly relevant to this task. To fulfill the query, one would typically pre-allocate a string of a given size, often using methods like `' ' * size` or `str('\\0') * size` depending on the intended use (e.g., for buffer-like structures).",
+        "url": 276
+    },
+    {
+        "nl_input": "The query requires a Python function to convert a string into an integer. The function should handle cases where the string contains non-digit characters by extracting and combining digits to form the integer. If the input is not a valid integer, appropriate handling or fallback behavior may be needed.",
+        "url": 5603
+    },
+    {
+        "nl_input": "The query requires a Python function to retrieve column details (such as name and type) from an SQL table using a database connection. The function should accept the database connection and table name as parameters and return the column information in a structured format like a list of tuples.",
+        "url": 2535
+    },
+    {
+        "nl_input": "The query seeks to traverse directories using Python's `pathlib`, specifically looking for a function that recursively lists directory paths. The most relevant code defines a function that uses `scandir` to yield subdirectory paths, aligning with the traversal requirement. Other codes involve file listing and directory checking, which are partially related but less aligned with the core traversal need.",
+        "url": 2992
+    },
+    {
+        "nl_input": "The query seeks a Python function that creates a list of columns along with their data types (dtypes). It involves processing a dataset to identify and return the type for each column, using methods or logic that determine the appropriate dtype for every column in the data.",
+        "url": 1858
+    },
+    {
+        "nl_input": "The query requires a Python function to convert nested objects into dictionaries. It should handle object attributes, exclude private ones (starting with '_'), and recursively transform nested structures into dictionary format. The conversion must support serialization for complex types and produce a plain dictionary representation of the object's state.",
+        "url": 3775
+    },
+    {
+        "nl_input": "The query seeks a Python function to read DICOM image files and convert them into a NumPy array for further processing. The preferred implementation uses the GDCM library to handle DICOM-specific reading, followed by conversion to a NumPy array for numerical operations.",
+        "url": 1089
+    },
+    {
+        "nl_input": "The query requires a Python function to convert a given string to lowercase. The desired functionality involves handling string input, processing each character, and returning the lowercase version of the string. Additional considerations may include maintaining readability, ensuring correctness for various input types, and efficiently performing the transformation.",
+        "url": 3683
+    },
+    {
+        "nl_input": "The query asks how to implement a macro in Python. The relevant code demonstrates defining a function `define_macro` that stores a macro under a given name in the user namespace, ensuring it is either a string or a `Macro` instance.",
+        "url": 4263
+    },
+    {
+        "nl_input": "The query seeks information on how to properly close the standard input (stdin) of a subprocess in Python. The relevant code demonstrates closing `stdin` using `self._process.stdin.close()` during cleanup, ensuring resources are released and preventing potential hangs.",
+        "url": 3531
+    },
+    {
+        "nl_input": "The query seeks a Python function that computes the cumulative sum of a list using comprehension. The desired code should efficiently calculate running totals within a list, ideally leveraging Python's list comprehension structure for concise and readable implementation.",
+        "url": 325
+    },
+    {
+        "nl_input": "The query requires calculating the duration between two time points without considering microseconds, and converting this duration into milliseconds or seconds. The focus is on handling `timedelta` objects while excluding microsecond precision.",
+        "url": 4766
+    },
+    {
+        "nl_input": "The query requires a function to convert a Python object into a string representation. It should handle various types such as bytes, strings, and lists, potentially involving JSON encoding or attribute joining for complex objects.",
+        "url": 5541
+    },
+    {
+        "nl_input": "The query seeks to extract the trace ID from the request headers in a Flask application. It involves retrieving a specific header, potentially splitting its value, and returning the relevant trace identifier.",
+        "url": 1456
+    },
+    {
+        "nl_input": "The query requires a function that converts all elements in a list of strings to lowercase. The desired function should iterate over the input list and yield each string in lowercase format. The most suitable implementation is a generator function `gen_lower` that processes each string in the input iterable and yields its lowercase version.",
+        "url": 5592
+    },
+    {
+        "nl_input": "The query seeks a Python method to reorder a list by moving a specified element to the front, using sorting or list manipulation techniques. It emphasizes dynamic list adjustment and maintaining order after insertion.",
+        "url": 3348
+    },
+    {
+        "nl_input": "The query requires a Python function to remove special characters from column names in a DataFrame. The function should clean the column names by stripping whitespace, converting to lowercase, and replacing spaces with underscores.",
+        "url": 6049
+    },
+    {
+        "nl_input": "The query requires a Python function to calculate the average of a given list. The function should handle basic summation and division by the number of elements. Optionally, it may include error handling for empty lists or special cases like single-element lists, but this is not strictly required.",
+        "url": 1278
+    },
+    {
+        "nl_input": "The query seeks to understand the requirements for cloning a Git repository, potentially checking if Git is installed or if a directory is a Git repository beforehand. It may also involve handling errors related to Git availability or implementing an alternative cloning mechanism using file copying.",
+        "url": 4425
+    },
+    {
+        "nl_input": "The query requires a Python lambda function that accepts three parameters. The provided code snippets are related to creating or handling lambda functions in different contexts, but none of them directly define a lambda with exactly three parameters. Based on the query, the desired lambda function would take the form `lambda x, y, z: expression`, where `x`, `y`, and `z` are the three input parameters.",
+        "url": 2067
+    },
+    {
+        "nl_input": "The query requires a Python function to check or remove punctuation from text. The desired functionality involves identifying punctuation characters, potentially removing them from a string, and possibly handling consecutive spaces after removal. The implementation may involve string filtering, character comparison, or set-based exclusion using standard punctuation references.",
+        "url": 3520
+    },
+    {
+        "nl_input": "The query seeks to handle an \"unsupported media type\" error when parsing JSON in Python, typically arising during API responses or data decoding. It involves checking the content type and ensuring proper encoding (e.g., UTF-8) before parsing JSON, or setting a specific MIME type for Python responses. The goal is to avoid errors due to mismatched or unsupported media types during data exchange.",
+        "url": 2695
+    },
+    {
+        "nl_input": "The query requires a Python function to split a string into a list using a specified separator, while optionally filtering out empty values. It should return a sanitized list after stripping whitespace and handling empty entries based on the filter flag.",
+        "url": 5723
+    },
+    {
+        "nl_input": "The query seeks a Python function to remove specific phrases or words from a list of strings. It aims to filter out unwanted terms, potentially for text preprocessing, by matching and eliminating exact phrases or individual words from the input strings.",
+        "url": 5557
+    },
+    {
+        "nl_input": "The query seeks the fastest method in Python to load data from a file. It references three functions: one using `pandas.read_csv` for tab-separated values, another using `json.load` for JSON files, and a third using `pickle.load` for serialized Python objects. Each function reads data from a file path but uses different formats and libraries.",
+        "url": 2830
+    },
+    {
+        "nl_input": "The query requires a Python function to add noise to an audio signal. The provided code includes a suitable function `add_noise(Y, sigma)` that introduces Gaussian noise to the input audio array `Y` with a specified standard deviation `sigma`. This meets the requirement of performing noise addition in audio processing tasks.",
+        "url": 694
+    },
+    {
+        "nl_input": "The query requires a Python function that converts a comma-delimited string into a list. The function should handle both strings and lists as input, returning a list of elements split by commas. If the input is already a list, it should be returned as-is. Empty or non-list/non-string inputs should result in an empty list.",
+        "url": 1439
+    },
+    {
+        "nl_input": "The query requires a Python function or method to set limits on the x-axis of a plot. The function should allow specifying minimum and maximum values for the x-axis range, potentially involving subplot handling and UI widget updates.",
+        "url": 3834
+    },
+    {
+        "nl_input": "The query asks whether Python's SSL socket connection is thread-safe. The provided code snippets involve SSL socket handling, including wrapping a socket with SSL, checking SSL objects, and creating connections. However, none of the code explicitly addresses or ensures thread safety during SSL operations. Thread safety would depend on external synchronization mechanisms not shown here.",
+        "url": 2787
+    },
+    {
+        "nl_input": "The query requires functions to encode and decode bytes in Python 3. The code provides utilities for converting between strings and bytes, handling different Python versions, and ensuring proper encoding/decoding with specified character sets like UTF-8.",
+        "url": 1377
+    },
+    {
+        "nl_input": "The query requires converting an XSD file into a Python object. The relevant code should handle loading an XML file, validating it against an XSD schema, and converting the XML structure into a usable Python object or dictionary format.",
+        "url": 1677
+    },
+    {
+        "nl_input": "The query requires a Python function to expand a file path by resolving user-specific and environment variable placeholders, potentially normalizing slashes, and returning the absolute or expanded path.",
+        "url": 3524
+    },
+    {
+        "nl_input": "The query seeks a Python Flask example for rendering an HTML table. The relevant code should involve functions or methods that generate and display tables, particularly using Flask's templating capabilities. It likely includes HTML rendering, data formatting, and integration with Flask's response system.",
+        "url": 4050
+    },
+    {
+        "nl_input": "The query asks how to check if an object is defined in Python. The relevant code provides functions that determine whether a given object or variable exists, using methods like checking the namespace or attempting to evaluate the object's definition status.",
+        "url": 202
+    },
+    {
+        "nl_input": "The query requires a Python implementation for synchronizing files between directories and an S3 bucket. The code should include functionality to walk through directories, upload files to S3, and utilize bucket and key information for the transfer process.",
+        "url": 1312
+    },
+    {
+        "nl_input": "The query seeks to change the position of a 3D coordinate in Python, potentially involving transformation based on a normal vector and a specified z-value. It implies the need for a function that accepts points and a normal vector as inputs, and returns the transformed 3D coordinates.",
+        "url": 1270
+    },
+    {
+        "nl_input": "The query seeks to determine the number of CPU cores in a computer using Python. It involves leveraging system-specific calls or libraries like `multiprocessing`, `os`, or even system commands to retrieve core count information.",
+        "url": 956
+    },
+    {
+        "nl_input": "The query asks how to use `pdb.set_trace()` in Python. The relevant code shows that `set_trace()` can be implemented using `pdb.Pdb(stdout=sys.__stdout__).set_trace(sys._getframe().f_back)` to start debugging at the caller's frame.",
+        "url": 900
+    },
+    {
+        "nl_input": "The query requires a Python function to URL-encode a dictionary, converting its key-value pairs into a properly formatted query string suitable for use in URLs.",
+        "url": 2486
+    },
+    {
+        "nl_input": "The query seeks a method to determine if a given string represents an integer in Python. It explores functions that check for integer type, attempt conversion, or validate string format to accurately identify integer values.",
+        "url": 5776
+    },
+    {
+        "nl_input": "The query requires a Python function to change file permissions using `os.chmod`, handling platform differences (Windows and Unix-like systems) and potential exceptions. It should attempt setting write permissions on Windows and a broad access mode (e.g., 0o777) on Unix, with graceful error handling.",
+        "url": 2659
+    },
+    {
+        "nl_input": "The query requires applying a Gaussian filter to an array or image using Python. The function should utilize libraries like SciPy or OpenCV to perform the filtering, with parameters for sigma (standard deviation) and possibly kernel size. The operation should smooth the input data by convolving it with a Gaussian kernel.",
+        "url": 374
+    },
+    {
+        "nl_input": "The query seeks a method in Python to truncate or cut off a calculated number to two decimal places, without rounding. The desired approach should remove any trailing digits beyond the second decimal place, rather than performing standard rounding.",
+        "url": 5704
+    },
+    {
+        "nl_input": "The query seeks a Python function to replace multiple values in a string at once. The provided code includes a function `multi_replace` that takes a string and two lists (one for search terms and one for replacements), then sequentially replaces each occurrence of the search terms with corresponding replacements. This function can handle bulk string substitutions efficiently.",
+        "url": 3362
+    },
+    {
+        "nl_input": "The query requires converting arrays or data types to `float64` in NumPy. This includes creating a NumPy array from a C-style double pointer using `ctypes`, and optionally casting an existing array from `float32` to `float64` for improved precision during computations.",
+        "url": 854
+    },
+    {
+        "nl_input": "The query asks how to rank a list in Python. The provided code examples involve ranking using list comprehensions, numpy array operations, and the `nlargest` function from the standard library. The goal is to apply a ranking transformation to a list or object, typically returning ranked results based on certain criteria like values or keys.",
+        "url": 4604
+    },
+    {
+        "nl_input": "To check if a file does not exist in Python, use `os.path.exists(arg)` to verify the file's presence. If it returns `False`, the file does not exist. This can be integrated into a function or script to handle missing files gracefully or raise an error as needed.",
+        "url": 2931
+    },
+    {
+        "nl_input": "To get the parent directory in Python, use `os.path.dirname()` or `os.path.split()` to extract the parent directory from a given file path. Functions involving `os.path.abspath()` and `os.pardir` can also navigate to the parent directory.",
+        "url": 415
+    },
+    {
+        "nl_input": "The query requires a Python function using the PIL library to resize an image to a specified size while maintaining aspect ratio, utilizing the `resize` method with `ANTIALIAS` filtering for better quality.",
+        "url": 2018
+    },
+    {
+        "nl_input": "The query requires creating a boxplot for a DataFrame in Python. The relevant code computes boxplot statistics using `matplotlib.cbook.boxplot_stats`, handles non-numeric data, and formats results with counts and outliers, suitable for generating boxplots from DataFrame columns.",
+        "url": 2783
+    },
+    {
+        "nl_input": "The query requires a Python function to read a linear programming (LP) model from an LP file using the GLPK library. The function should take a file path as input, create a GLPK problem instance, load the LP data into it, and return the populated problem object for further processing or solving.",
+        "url": 4588
+    },
+    {
+        "nl_input": "The query seeks functionality related to closing or joining a thread pool in Python, specifically focusing on methods that wait for all threads to complete execution, potentially with timeout handling or termination procedures.",
+        "url": 1252
+    },
+    {
+        "nl_input": "The query requires performing one-hot encoding on string values using Python's `sklearn` library. The desired functionality likely involves converting categorical string data into a one-hot encoded numerical format, which can be achieved using `OneHotEncoder` from `sklearn.preprocessing`. This transformation is commonly used in machine learning pipelines to handle nominal features.",
+        "url": 1405
+    },
+    {
+        "nl_input": "The query seeks a Python function to convert a string into bytes, preferably handling different Python versions and ensuring proper encoding (e.g., UTF-8). It implies the need for compatibility between Python 2 and 3, checking input types, and using appropriate encoding.",
+        "url": 5708
+    },
+    {
+        "nl_input": "The query seeks to understand how to decode or load JSON data in Python, particularly handling cases like string type checking, decoding binary data, and using try-except blocks to manage potential errors during JSON parsing.",
+        "url": 2057
+    },
+    {
+        "nl_input": "The query requires a function to create an empty column in a pandas DataFrame. The provided code examples include operations for adding a blank row, filling nulls in a column, and creating an empty NumPy array, but none directly demonstrate how to add an empty column to a DataFrame.",
+        "url": 27
+    },
+    {
+        "nl_input": "The query seeks to remove trailing whitespace from lines in Python. It involves identifying and eliminating spaces, line breaks, or indentations at the end of lines, primarily manipulating string data to achieve a clean output without unnecessary white spaces.",
+        "url": 2581
+    },
+    {
+        "nl_input": "The query seeks information on Python file opening modes. The referenced codes demonstrate different implementations and wrappers for opening files, but the core requirement is understanding standard file modes like 'r', 'w', 'a', etc., used in functions like `open()` and custom wrappers such as `open_file()`, `_open()`, and `fopen()`.",
+        "url": 1796
+    },
+    {
+        "nl_input": "The query requires a Python function that prompts the user for string input, optionally with a default value. It should handle user interaction by displaying a prompt and returning the entered value or the default if none is provided.",
+        "url": 63
+    },
+    {
+        "nl_input": "The query requires a Python script to parse a log file that is actively being logged to. It involves reading the log file contents, potentially configuring logging settings, and handling log output dynamically. The solution should include functions for parsing logs, managing log configuration, and writing logs to a file.",
+        "url": 1429
+    },
+    {
+        "nl_input": "The query seeks to remove an entry from a dictionary in Python. The provided functions demonstrate different approaches to achieve this: filtering by value, removing multiple keys, or using a class method to remove an entry object. Each function removes elements under specific conditions, such as matching a value, checking key existence, or handling exceptions.",
+        "url": 5594
+    },
+    {
+        "nl_input": "The query seeks a Python function or method that writes a new line after a statement. The desired functionality includes writing a given line of text and ensuring it is followed by one or more newlines, effectively separating the output onto a new line.",
+        "url": 2415
+    },
+    {
+        "nl_input": "The query requires a Python function to format a column in a DataFrame as strings using a specified format, without altering the data type, ensuring consistency across blocks. The function should handle string formatting efficiently, potentially involving arrow string sequences. Additional context includes converting a string column to datetime and creating a dataset from a series.",
+        "url": 3291
+    },
+    {
+        "nl_input": "The query requires a function to select values from a table column that are not null. The function should allow for a logical check against a specified field, ensuring only non-null entries are selected. A helper function or condition evaluating whether a value is not `None` must be utilized in the selection process.",
+        "url": 1092
+    },
+    {
+        "nl_input": "The query seeks to understand how functions in Python can determine the type of parameters they receive. The provided code examples demonstrate techniques such as using `isinstance()`, checking for attributes like `dtype`, and validating types within helper functions.",
+        "url": 4548
+    },
+    {
+        "nl_input": "The query requires functionality to position the cursor on a Windows system using Python. The code should retrieve or set the cursor's coordinates, utilizing Windows API through `ctypes` or similar methods for cursor manipulation.",
+        "url": 365
+    },
+    {
+        "nl_input": "The query seeks a method to evenly distribute points along the perimeter of an ellipse in Python. It requires generating coordinates that lie on the ellipse's boundary at equal intervals, implying the use of parametric equations and potentially angular spacing. The solution should allow for adjustable width, height, and rotation angle of the ellipse.",
+        "url": 1016
+    },
+    {
+        "nl_input": "To determine how similar two images are in Python, the query seeks methods or functions that compute similarity between image data. It references functions comparing ngrams of inputs, leveraging a model's similarity function, or calculating similarity through common sequences in image data. The focus is on extracting similarity metrics from provided code examples.",
+        "url": 1294
+    },
+    {
+        "nl_input": "To ensure an input string has no spaces in Python, the solution involves defining a function that processes the string by removing or stripping spaces using methods like `split`, `strip`, and `join`. The function may handle edge cases such as multiple spaces, leading/trailing spaces, and empty strings.",
+        "url": 3248
+    },
+    {
+        "nl_input": "The query requires a Python implementation for reading the next line from an input stream, potentially involving iteration, handling of end-of-stream conditions, and possibly tracking line numbers. The solution should include appropriate error handling and logging.",
+        "url": 1590
+    },
+    {
+        "nl_input": "The query requires a Python function to move a specified item to the front of a list. The function should handle the list and the target value as inputs, ensuring that if the value exists in the list, it is removed from its current position and inserted at the front.",
+        "url": 1236
+    },
+    {
+        "nl_input": "The query requires a Python function that wraps a given string `s` into lines with a specified width `w`, using the `textwrap` module. The output should be the wrapped string where each line does not exceed the given width, and it may involve stripping whitespace, handling tabs or special characters, and joining lines appropriately.",
+        "url": 4399
+    },
+    {
+        "nl_input": "The query seeks to understand how to identify and handle missing values in Python, specifically distinguishing between blanks, NaN (Not a Number), and None. It explores methods for detecting these missing value types and applying appropriate checks or replacements using libraries like NumPy and Pandas.",
+        "url": 5888
+    },
+    {
+        "nl_input": "The query seeks a Python function to compute the bin indices from given bin edges. The desired functionality involves determining which bin each value falls into, typically using bin edge information returned by functions like `get_bin_edges_from_axis`. One of the provided functions, `val_to_bin`, fulfills this need by leveraging `np.digitize` to find the appropriate bin index for input values based on the provided edges.",
+        "url": 521
+    },
+    {
+        "nl_input": "The query seeks a Python function to convert a comma-separated string into a list, handling cases where the input may already be a list or another iterable. It should return a list of values split by commas, ensuring flexibility for various input types such as strings, lists, tuples, or sets.",
+        "url": 77
+    },
+    {
+        "nl_input": "The query seeks methods to disable SSL certificate verification when making requests in Python, typically to bypass SSL errors during HTTP calls. It also explores ways to suppress warnings related to insecure requests, mainly involving the `requests` and `ssl` libraries.",
+        "url": 2308
+    },
+    {
+        "nl_input": "The query requires a Python function that can compute the probability density function (PDF) of a Gaussian (normal) distribution using variance (`var`) as an input parameter. It should take in values `x`, mean `mu`, and variance `sigma^2`, and return the corresponding PDF value based on the Gaussian distribution.",
+        "url": 96
+    },
+    {
+        "nl_input": "To determine if a matrix is orthogonal in Python, check whether it is a square matrix and its product with its transpose equals the identity matrix within a tolerance. This can be achieved using NumPy's `dot`, `eye`, and `allclose` functions.",
+        "url": 5774
+    },
+    {
+        "nl_input": "The query requires a Python function to remove HTML tags from a string. Optionally, it may involve preserving tag content or handling markdown. Suitable solutions include using regex substitution or leveraging libraries like BeautifulSoup for parsing and stripping tags effectively.",
+        "url": 3792
+    },
+    {
+        "nl_input": "The query requires a function to center-align text within a specified width. The implementation should split the input text into lines, center each line, and return the combined result. Optional padding or alignment adjustments are not required unless explicitly mentioned.",
+        "url": 156
+    },
+    {
+        "nl_input": "The query seeks to retrieve a list of keys from an object. Among the provided code snippets, the most relevant is the `get_all_items` function, which iterates through the object's keys and values, appending them to a list as key-value pairs. This function supports objects that have a `getlist` method, making it suitable for handling multi-valued mappings.",
+        "url": 387
+    },
+    {
+        "nl_input": "The query is asking if there is a Python function to check for NaN (Not a Number) values. The provided code snippets include functions that handle NaN checks, such as `_isnan`, `isnull`, and `warn_if_nans_exist`. These functions use methods like `isna`, `np.empty`, and warnings to detect and manage NaN values in data structures.",
+        "url": 621
+    },
+    {
+        "nl_input": "The query requires extracting cookie-related logic from provided Python code snippets. It seeks functions or methods that retrieve or parse cookies from a request, returning them in a structured format like a dictionary. The focus is on handling HTTP cookies, including parsing and deserialization, for use in subsequent requests.",
+        "url": 3111
+    },
+    {
+        "nl_input": "The query seeks a Python function to ensure input is converted into a list, handling cases where the input may be `None`, a non-iterable, or an iterable like a tuple or NumPy array. It should return a list in all cases.",
+        "url": 755
+    },
+    {
+        "nl_input": "The query seeks to determine whether a given file is an image by checking its extension. The solution involves verifying if the file exists and then confirming that its extension matches one of the standard image formats such as `.png`, `.jpg`, `.jpeg`, or `.gif`.",
+        "url": 1636
+    },
+    {
+        "nl_input": "The query requires a Python function to reorganize a DataFrame by stacking its columns, renaming the index, and resetting it to a flat structure with \"id\", \"time\", and \"value\" columns. The transformation should return the reshaped DataFrame in the desired format.",
+        "url": 4720
+    },
+    {
+        "nl_input": "The query requires a Python function to read the first line from a text file. The function should handle potential edge cases, such as empty files or missing content, by returning a default value if necessary. Additionally, it should properly decode and strip any newline characters from the line before returning it.",
+        "url": 971
+    },
+    {
+        "nl_input": "The query seeks to pass a defined parser object to a subparser in Python's `argparse` module. The code demonstrates creating a root parser, defining subparsers, and attaching arguments and functions to subparsers. It emphasizes structuring command-line interface tools with nested subcommands and associated behaviors.",
+        "url": 2600
+    },
+    {
+        "nl_input": "The query seeks to understand how to print a generic error message in Python. The referenced code examples demonstrate methods for printing errors, including using `traceback.print_exc()`, defining custom error-printing functions like `print_error()`, and integrating with debugging tools like `pdb`. These approaches allow for clear and formatted error output, suitable for general error logging or handling unexpected exceptions in Python programs.",
+        "url": 3811
+    },
+    {
+        "nl_input": "The query requires a Python function to change or normalize the name of a key. The function should modify the key by replacing hyphens with underscores, potentially removing a prefix like \"noy_\", and possibly capitalizing or transforming the key for display purposes.",
+        "url": 1602
+    },
+    {
+        "nl_input": "The query requires implementing mouse movement and click functionality in Python using GUI frameworks like PyQt or Selenium. It involves handling mouse events, moving the cursor to specific coordinates, and performing a click action. The focus is on integrating mouse interaction with event-driven programming or test automation.",
+        "url": 984
+    },
+    {
+        "nl_input": "The query requires a Python function to check if a service is running. The function should take a service name or process ID as input and return a boolean indicating whether the service or process is currently active. It may utilize system commands like `service` or `ps` to determine the status.",
+        "url": 235
+    },
+    {
+        "nl_input": "The query requires checking if multiple items are present in a Python set-like structure, potentially involving methods for adding elements, verifying subsets or supersets, and constructing sets from iterables. The focus is on set operations that ensure element containment and uniqueness.",
+        "url": 6019
+    },
+    {
+        "nl_input": "The query requires a Python function to parse a Protocol Buffer (proto) message from byte data. It involves converting bytes into a structured proto object, potentially using methods like `ParseFromString` or leveraging JSON serialization as an intermediate step. The function should handle deserialization of binary data into a usable proto format.",
+        "url": 5882
+    },
+    {
+        "nl_input": "The query requires a Python function to check whether a given directory is writable. It should return `True` if the directory exists and has write permissions, using standard OS functions like `os.path.isdir()` and `os.access(path, os.W_OK)`.",
+        "url": 651
+    },
+    {
+        "nl_input": "The query seeks a Python implementation that converts an object into a list, potentially handling nested structures like children or complex types. It emphasizes methods named `as_list`, `_as_dict`, or `to_list` that recursively convert objects or values into lists, including error handling for non-convertible types.",
+        "url": 633
+    },
+    {
+        "nl_input": "The query seeks a Python function to replace NaN values in an array with a specified value. The function should identify NaN entries and substitute them, while preserving the original data structure and handling arrays or series inputs effectively.",
+        "url": 1025
+    },
+    {
+        "nl_input": "The query requires checking if a key exists in a hash table in Python. The solution involves verifying the presence of a key using methods or functions, potentially involving hash key comparison, dictionary key checks, or interaction with a Redis hash.",
+        "url": 5872
+    },
+    {
+        "nl_input": "The query requires a function that takes a list of 8 points (x, y coordinates) and computes the smallest enclosing axis-aligned bounding box. The output should be the coordinates of the top-left and bottom-right corners of the box in the format (min_x, min_y, max_x, max_y).",
+        "url": 5215
+    },
+    {
+        "nl_input": "The query seeks to create or retrieve an enumeration by its name using a function. The function should accept the name of an enum and return the corresponding enum object or value. The provided code examples demonstrate techniques for retrieving enums by name, either through iteration, dictionary mapping, or value-name resolution. These functions help map string names to actual enum instances.",
+        "url": 4091
+    },
+    {
+        "nl_input": "The query seeks to understand how to use arrow markers in Python's `matplotlib` library. The relevant code defines a method `add_arrow` that adds an arrow between two points `(x1, y1)` and `(x2, y2)` using `matplotlib`.",
+        "url": 3302
+    },
+    {
+        "nl_input": "The query seeks to understand how Python function default arguments can be retrieved or manipulated. It references code that extracts default argument values from a function and returns them as a dictionary. The other codes are related to handling default command-line arguments using `argparse` and updating default configuration values within a class, respectively.",
+        "url": 139
+    },
+    {
+        "nl_input": "The query asks how to select the first 100 rows in Python, but none of the provided code snippets directly address this task. Each function serves a different purpose: extracting first values from rows, generating first values using a generator, and selecting random rows with a limit. None of these fulfill the requirement of selecting the first 100 rows from a dataset or database query.",
+        "url": 5650
+    },
+    {
+        "nl_input": "The query seeks to remove specified columns from a DataFrame in Python. The relevant code defines a method that iterates through the columns to be removed, checks their existence, and drops them one by one using `drop()` with `axis=1`, returning the modified DataFrame.",
+        "url": 5616
+    },
+    {
+        "nl_input": "The query requires converting a Python array to a PyTorch tensor. The provided code includes functions for converting array-like objects to tensors using TensorFlow (`tf.convert_to_tensor`), ONNX (`to_array`), and NumPy (`np.asarray`/`np.frombuffer`). However, none of the code directly uses PyTorch\u2019s `torch.tensor` or related methods. The main requirement is to convert an array to a PyTorch tensor, possibly with dtype handling and support for different input types (e.g., bytes, array-like).",
+        "url": 5649
+    },
+    {
+        "nl_input": "The query seeks a Python function to convert a list into a CSV format. The function should handle scenarios such as different Python versions, properly open files for writing, use the `csv` module to write rows, and ensure proper formatting with delimiters and quotes. It also implies handling edge cases and closing files after writing.",
+        "url": 77
+    },
+    {
+        "nl_input": "To unzip a file in Python, you can use the `ZipFile` class from the `zipfile` module. The provided code demonstrates using `ZipFile(path_to_zip, 'r')` to open a zip file and `extractall(output_directory)` to extract its contents to a specified directory. A function named `unzip_file_to_dir` is shown, which takes a path to the zip file and an output directory as parameters. This function opens the zip file, extracts all files to the specified directory, and then closes the zip file.\n\nBased on this, the query's requirements can be described as follows:\n\n**Description:** The user wants to know how to extract (unzip) the contents of a ZIP file into a specified directory using Python. They are likely looking for a reusable function or script that leverages Python\u2019s standard libraries to perform this task efficiently.",
+        "url": 1220
+    }
+]
