@@ -22,7 +22,7 @@ We use the following models:
 pip install -r requirements.txt
 ```
 ### Evaluation in Cross-Domain Setting
-* We have provided the generated files in `data/`. For instructions on generating the description and comments using [DeepSeek-Coder-1.3b-Instruct](https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-instruct), please refer to `gen_exquery.py` and `generate_comment.py`.
+* We have provided the generated files in `data/`. For instructions on generating the description and comments using [DeepSeek-Coder-1.3b-Instruct](https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-instruct), please refer to `generate_query.py` and `generate_comment.py`.
 * To reproduce the result, start by obtaining the embeddings from various models. The embeddings will be stored in the folder `vectors`. You can modify the dataset name in `scripts/get_embedding.sh and scripts/get_embedding_ex.sh` to get different embeddings.
 ```bash
 bash scripts/get_embedding.sh
