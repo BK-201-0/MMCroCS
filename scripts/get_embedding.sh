@@ -28,9 +28,7 @@ code_path="${lang}_code_path"
 code_path=${!code_path}
 
 
-#comment_path="$dir/${lang}_test_comment.jsonl"
-comment_path="$dir/${lang}_test_comment_1.jsonl"
-
+comment_path="$dir/${lang}_test_comment.jsonl"
 
 gencode_path="$dir/${lang}_test_gen_code.jsonl"
 
