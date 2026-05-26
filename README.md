@@ -26,7 +26,6 @@ pip install -r requirements.txt
 * To reproduce the result, start by obtaining the embeddings from various models. The embeddings will be stored in the folder `vectors`. You can modify the dataset name in `scripts/get_embedding.sh and scripts/get_embedding_ex.sh` to get different embeddings.
 ```bash
 bash scripts/get_embedding.sh
-bash scripts/get_embedding_ex.sh
 ```
 * Evaluate the results.
 ```bash
