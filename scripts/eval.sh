@@ -1,5 +1,5 @@
 langs=(sql solidity cosqa)
-#langs=(cosqa)
+#langs=(sql)
 
 models=(cocosoda bge-large-en-v1.5 unixcoder)
 
@@ -71,12 +71,9 @@ for lang in "${langs[@]}"; do
         --gendes_cocosoda_path   "${paths[0]}$lang-gendes.npy" \
         --gendes_bge_path   "${paths[1]}$lang-gendes.npy" \
         --gendes_unixcoder_path   "${paths[2]}$lang-gendes.npy" \
-        --gendes1_cocosoda_path   "${paths[0]}$lang-gendes-1.npy" \
-        --gendes1_bge_path   "${paths[1]}$lang-gendes-1.npy" \
-        --gendes1_unixcoder_path   "${paths[2]}$lang-gendes-1.npy" \
-        --exquery_cocosoda_path   "${paths[0]}$lang-exquery-qwen-3.npy" \
-        --exquery_bge_path   "${paths[1]}$lang-exquery-qwen-3.npy" \
-        --exquery_unixcoder_path   "${paths[2]}$lang-exquery-qwen-3.npy" \
+        --exquery_cocosoda_path   "${paths[0]}$lang-exquery.npy" \
+        --exquery_bge_path   "${paths[1]}$lang-exquery.npy" \
+        --exquery_unixcoder_path   "${paths[2]}$lang-exquery.npy" \
         --query_data_file $query_path \
         --code_data_file $code_path \
         --comment_data_file $comment_path \
