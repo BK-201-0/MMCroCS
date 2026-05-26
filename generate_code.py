@@ -27,7 +27,6 @@ def extract_code(generation, lang):
         return generation
 
 
-
 class DeepSeekModel:
     def __init__(self, model_path):
         self.tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
@@ -41,43 +40,6 @@ class DeepSeekModel:
         outputs = self.model.generate(inputs, max_new_tokens=max_new_tokens, do_sample=False, num_return_sequences=1, eos_token_id=self.tokenizer.eos_token_id)
         return self.tokenizer.decode(outputs[0][len(inputs[0]):], skip_special_tokens=True)
 
-
-def generate_code(model, dataset, args,  max_new_tokens=256):
-    # check dir
-    if not os.path.exists(args.output_path):
-        print(f"creating dir: {args.output_path}")
-        os.makedirs(args.output_path)
-
-    # check
-#     prompt = """Write a code for the following query in {language} without comments. You must return a code and must not refuse to answer.
-# {query}
-# """
-    prompt = """
-Write a code in {language} for the following query without comments. You must return the code and must not refuse to answer. Encounter the non-existent function, use the code to describe and demonstrate its logic.
-    {query}
-    """
-    language = args.lang
-    if args.lang == 'cosqa':
-        language = 'Python'
-    final_ans = []
-    for i, item in tqdm(enumerate(dataset)):
-        query = item['nl_input']
-        prompt_text = prompt.format(language=language, query=query)
-        gencode = model.generate(prompt_text, max_new_tokens=max_new_tokens)
-        final_ans.append(
-            {   'code_input': extract_code(gencode, language), 
-                'nl_input': query,
-                'gt': item['code_input'],
-                'url': item['url']
-             }
-        )
-       
-    filename = os.path.join(args.output_path, f'{args.lang}_test_gen_code_python.jsonl')
-    # filename = os.path.join(args.output_path, f'{args.lang}_test_gen_code.jsonl')
-    with open(filename, 'w', encoding='utf-8') as file:
-        json.dump(final_ans, file, indent=4)
-
-    print(f"Data has been written to {filename}")
 
 def generate_des(model, dataset, args, max_new_tokens=256):
     # check dir
@@ -142,10 +104,7 @@ if __name__ == '__main__':
     if 'deepseek' in args.model_path:
         gen_model = DeepSeekModel(args.model_path)
 
-    # generate_code(gen_model, query_dataset, args, max_new_tokens=256)
     generate_des(gen_model, query_dataset, args, max_new_tokens=128)
 
-    # query = "Replace the owner with a new owner ."
-    # generate_des_t(gen_model, query, args, max_new_tokens=128)
 
 
