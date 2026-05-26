@@ -4,9 +4,8 @@ lang=sql # sql/cosqa/solidity/rust
 #lang=rust # sql/cosqa/solidity/rust
 
 models=(cocosoda bge-large-en-v1.5 unixcoder) #bge-large-en-v1.5/unixcoder/cocosoda
-#models=(codet5p220)
-#formats=(comment)
-formats=(query code comment gencode)
+
+formats=(query code comment gencode gendes exquery)
 
 
 dir="./data/cross-domain/$lang"
@@ -27,17 +26,18 @@ query_path=${!query_path}
 code_path="${lang}_code_path"
 code_path=${!code_path}
 
-
 comment_path="$dir/${lang}_test_comment.jsonl"
-
 gencode_path="$dir/${lang}_test_gen_code.jsonl"
+gendes_path="$dir/${lang}_test_gen_des.jsonl"
+exquery_path="$dir/${lang}_test_exquery_1.jsonl"
+
 
 
 for model in "${models[@]}"; do
     for format in "${formats[@]}"; do
         datafile="${format}_path"
         datafile=${!datafile}
-        CUDA_VISIBLE_DEVICES="2, 4" \
+        CUDA_VISIBLE_DEVICES="0, 1" \
         python eval.py \
             --mode embedding \
             --model_name_or_path $model\
