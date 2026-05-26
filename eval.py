@@ -1,6 +1,3 @@
-"""
-clean version of evaluation
-"""
 import os
 from sklearn.metrics import mean_squared_error
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -22,7 +19,7 @@ from transformers import (WEIGHTS_NAME, AdamW, get_linear_schedule_with_warmup,
 from embedding import ModelEmbedding, get_embedding_model
 import metric
 from prettytable import PrettyTable
-from llm_gen import generate_rank, generate_exinfo
+from llm_gen import  generate_exinfo
 
 logger = logging.getLogger(__name__)
 
@@ -389,8 +386,7 @@ if __name__ == '__main__':
                            args.lang)
         if not os.path.exists(dir_path):
             os.makedirs(dir_path)
-        save_vector_path=os.path.join(dir_path,f"{args.lang}-{args.format}-qwen-3.npy")
-        # save_vector_path=os.path.join(dir_path,f"{args.lang}-{args.format}.npy")
+        save_vector_path=os.path.join(dir_path,f"{args.lang}-{args.format}.npy")
         logger.info(f"getting embedding of {args.lang} {args.format}")
         logger.info(f"save vectors to {save_vector_path}, is_nl = {is_nl}")
         get_embeddings(args.device, 
