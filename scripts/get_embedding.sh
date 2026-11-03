@@ -5,7 +5,7 @@ lang=sql # sql/cosqa/solidity/rust
 
 models=(cocosoda bge-large-en-v1.5 unixcoder) #bge-large-en-v1.5/unixcoder/cocosoda
 
-formats=(query code comment gencode gendes exquery)
+formats=(query code comment gendes exquery)
 
 
 dir="./data/cross-domain/$lang"
