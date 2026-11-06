@@ -1,11 +1,9 @@
-lang=sql  # sql/cosqa/solidty
+#lang=sql  # sql/cosqa/solidty
 #lang=solidity
-#lang=cosqa
+lang=cosqa
 
 models=(cocosoda bge-large-en-v1.5 unixcoder) #bge-large-en-v1.5/unixcoder/cocosoda
-#formats=(query code comment gendes)
-formats=(exquery)
-
+formats=(query code comment exquery gendes)
 
 
 dir="./data/rapid"
