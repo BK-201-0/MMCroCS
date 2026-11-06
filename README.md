@@ -41,7 +41,7 @@ bash scripts/get_embedding_rapid.sh
 ```bash
 bash scripts/eval_rapid.sh
 ```
-* You can modify the `--mode "eval1"` argument in `eval.sh`. Here, `eval1` corresponds to the setting for hybrid retrieval ranking (HRR) only.
+* You can modify the `--mode "eval1"` argument in `eval.sh`. Here, `eval_1` corresponds to the setting for hybrid retrieval ranking (HRR) only.
 
 ### Data Analysis
 * `analyze.py` is used to analyze the results of hybrid retrieval ranking (HRR) and hybrid retrieval ranking + query expansion scoring (QES). We provide the experimental outputs of HRR and HRR+QES in the `results` folder. `sql_res3.jsonl` stores queries and their top-3 matched code candidates after HRR, while `sql_res10_ex.jsonl` contains queries and their top-10 matched code candidates after HRR+QES.
