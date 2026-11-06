@@ -47,3 +47,11 @@ bash scripts/eval_rapid.sh
 * `analyze.py` is used to analyze the results of hybrid retrieval ranking (HRR) and hybrid retrieval ranking + query expansion scoring (QES). We provide the experimental outputs of HRR and HRR+QES in the `results` folder. `sql_res3.jsonl` stores queries and their top-3 matched code candidates after HRR, while `sql_res10_ex.jsonl` contains queries and their top-10 matched code candidates after HRR+QES.
 * Please update the data path inside `analyze.py` before running to avoid file-not-found errors.
 
+### Function Introduction
+In the file `eval.py`:
+- The `get_exinfomation` function implements the query expansion scoring function.
+- The `get_exrank` function implements the reverse weighted search function.
+- The `get_example` function obtains the final result data and saves it as a file.
+
+Results at different stages can be obtained by calling various functions.
+
