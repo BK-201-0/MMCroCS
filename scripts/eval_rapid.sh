@@ -1,5 +1,5 @@
-#langs=(sql solidity cosqa)
-langs=(sql)
+langs=(sql solidity cosqa)
+#langs=(sql)
 
 models=(cocosoda bge-large-en-v1.5 unixcoder)
 
@@ -33,7 +33,7 @@ for lang in "${langs[@]}"; do
         paths+=("$path")  
     done 
     python ./eval.py  \
-        --mode "eval1"    \
+        --mode "eval2"    \
         --model_name_or_path $model \
         --eval_batch_size 8 \
         --device cuda \
@@ -43,7 +43,6 @@ for lang in "${langs[@]}"; do
         --query2comment_cache_path  "${paths[1]}$lang-query.npy" \
         --comment_cache_path   "${paths[1]}$lang-comment.npy" \
         --gencode_target_code_cache_path "${paths[2]}$lang-code.npy" \
-        --gen_code_cache_path   "${paths[2]}$lang-gencode.npy" \
         --query_cocosoda_path   "${paths[0]}$lang-query.npy" \
         --code_cocosoda_path   "${paths[0]}$lang-code.npy" \
         --query_bge_path   "${paths[1]}$lang-query.npy" \
@@ -56,9 +55,9 @@ for lang in "${langs[@]}"; do
         --gendes_cocosoda_path   "${paths[0]}$lang-gendes.npy" \
         --gendes_bge_path   "${paths[1]}$lang-gendes.npy" \
         --gendes_unixcoder_path   "${paths[2]}$lang-gendes.npy" \
-        --exquery_cocosoda_path   "${paths[0]}$lang-exquery-qwen-3.npy" \
-        --exquery_bge_path   "${paths[1]}$lang-exquery-qwen-3.npy" \
-        --exquery_unixcoder_path   "${paths[2]}$lang-exquery-qwen-3.npy" \
+        --exquery_cocosoda_path   "${paths[0]}$lang-exquery.npy" \
+        --exquery_bge_path   "${paths[1]}$lang-exquery.npy" \
+        --exquery_unixcoder_path   "${paths[2]}$lang-exquery.npy" \
         --query_data_file $query_path \
         --code_data_file $code_path \
         --comment_data_file $comment_path \
