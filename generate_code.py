@@ -69,22 +69,6 @@ def generate_des(model, dataset, args, max_new_tokens=256):
 
     print(f"Data has been written to {filename}")
 
-def generate_des_t(model, dataset, args, max_new_tokens=256):
-
-    language = args.lang
-    if args.lang == 'cosqa':
-        language = 'Python'
-    query = dataset
-    prompt = """
-After thinking step by step.For the following query, write down its requirements; the query is a function of {language} code.Give me a paragraph.
-{query}
-The format requirements specify that a paragraph should be returned.
-    """
-
-    prompt_text = prompt.format(language=language, query=query)
-    gendes = model.generate(prompt_text, max_new_tokens=max_new_tokens)
-    print(f"des:", gendes)
-
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
