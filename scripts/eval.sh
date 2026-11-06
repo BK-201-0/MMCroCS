@@ -53,9 +53,6 @@ for lang in "${langs[@]}"; do
         --query2comment_cache_path  "${paths[1]}$lang-query.npy" \
         --comment_cache_path   "${paths[1]}$lang-comment.npy" \
         --gencode_target_code_cache_path "${paths[1]}$lang-code.npy" \
-        --gen_code_cache_path   "${paths[1]}$lang-gencode.npy" \
-        --gencode_target_recode_cache_path "${paths[1]}$lang-recode-python.npy" \
-        --gen_code_python_cache_path   "${paths[1]}$lang-gencode-python.npy" \
         --query_cocosoda_path   "${paths[0]}$lang-query.npy" \
         --code_cocosoda_path   "${paths[0]}$lang-code.npy" \
         --query_bge_path   "${paths[1]}$lang-query.npy" \
