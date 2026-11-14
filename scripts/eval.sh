@@ -43,7 +43,7 @@ for lang in "${langs[@]}"; do
     done
     CUDA_VISIBLE_DEVICES="2" \
     python ./eval.py  \
-        --mode "eval1"    \
+        --mode "eval"    \
         --model_name_or_path $model \
         --eval_batch_size 8 \
         --device cuda \
@@ -79,5 +79,7 @@ for lang in "${langs[@]}"; do
         --w1 0.65 \
         --w2 0.25 \
         --w3 0.10 \
-        --w4 0.05
+        --w21 0.4 \
+        --w22 0.25 \
+        --w23 0.35
 done
