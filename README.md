@@ -7,6 +7,7 @@ Code retrieval across domains. Queries and code are enriched by an LLM, encoded 
     -cross-domain 
     -rapid
 -models # base models
+-results # experimental results
 -scripts # scripts for data preprocessing and evaluation
 ```
 
