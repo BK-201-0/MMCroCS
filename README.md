@@ -82,7 +82,9 @@ Output
 
 ```
 Input
-  the corpora from (a)
+  cosqa/code_idx_map.txt, cosqa/cosqa-retrieval-test-500.json
+  solidity/batch_0.txt
+  sql/batch_0.txt
   {cosqa,solidity,sql}/*_test_gen_des.jsonl
   {cosqa,solidity,sql}/*_test_comment.jsonl
 
@@ -99,7 +101,11 @@ Output
 
 ```
 Input
-  same as (b)
+  cosqa/code_idx_map.txt, cosqa/cosqa-retrieval-test-500.json
+  solidity/batch_0.txt
+  sql/batch_0.txt
+  {cosqa,solidity,sql}/*_test_gen_des.jsonl
+  {cosqa,solidity,sql}/*_test_comment.jsonl
 
 Run
   bash scripts/get_embedding.sh
@@ -116,6 +122,9 @@ Output
 
 ```
 Input
+  cosqa/code_idx_map.txt, cosqa/cosqa-retrieval-test-500.json
+  solidity/batch_0.txt
+  sql/batch_0.txt
   {cosqa,solidity,sql}/*_test_comment.jsonl
   {cosqa,solidity,sql}/*_test_exquery_1.jsonl
 
@@ -125,7 +134,7 @@ Run
   bash scripts/eval.sh
 
 Output
-  ranked results per language
+  MRR / Top-1 / Top-5 / Top-10 per language
 ```
 
 ---
