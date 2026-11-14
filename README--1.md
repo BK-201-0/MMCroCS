@@ -175,13 +175,3 @@ Run
 - `MODEL_PATH` in the generation scripts is an absolute local path.
 - Metrics come from `metric.py` (`MRR@k`, `Recall@k`); `analyze.py` computes rank statistics over saved results in `results/`.
 
-## Citation
-
-```bibtex
-@inproceedings{mmcrocs,
-  title     = {MMCroCS: Multi-Model Code Search across Domains},
-  author    = {TODO},
-  booktitle = {TODO},
-  year      = {TODO}
-}
-```
