@@ -44,6 +44,7 @@ bash scripts/get_embedding_rapid.sh
 ```bash
 bash scripts/eval_rapid.sh
 ```
+The detailed steps for each stage are listed below:
 
 Four stages, run in order:
 
@@ -55,19 +56,6 @@ Four stages, run in order:
 | (d) | Reverse Weighted Search | re-rank with the expanded queries |
 
 Stage (a) is optional — generated files are already in `data/`.
-
-## Setup
-
-```bash
-pip install -r requirements.txt
-```
-
-- `python==3.8.18`, `torch==2.0.1`, CUDA required
-- Embedding models: [CoCoSoDa](https://huggingface.co/DeepSoftwareAnalytics/CoCoSoDa), [bge-large-en-v1.5](https://huggingface.co/BAAI/bge-large-en-v1.5), [UniXcoder](https://huggingface.co/microsoft/unixcoder-base)
-- Generation model: [DeepSeek-Coder-1.3b-Instruct](https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-instruct)
-- Scripts pin `CUDA_VISIBLE_DEVICES`; change it to match your machine
-
----
 
 ## (1) Cross-Domain Setting
 
