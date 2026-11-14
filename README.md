@@ -44,7 +44,7 @@ bash scripts/get_embedding_rapid.sh
 ```bash
 bash scripts/eval_rapid.sh
 ```
-### The detailed steps for each stage are listed below:
+### Detailed Steps of Each Stage
 
 Four stages, run in order:
 
