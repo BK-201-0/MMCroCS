@@ -154,27 +154,49 @@ The four stages are unchanged. Only three things differ:
 ### (a) LLM Zero-Shot Generation
 
 ```
-Run
-  bash scripts/gen_query_rapid.sh
+Input
+  cosqa/cosqa-test-901.json
+  solidity/Solidity.txt
+  sql/batch_0.txt
+
+Run   (set MODEL_PATH to your local DeepSeek-Coder checkpoint first)
+  bash scripts/gen_des_rapid.sh   # query -> description
+  bash scripts/gen_query_rapid.sh    # code  -> comment
 
 Output
-  data/rapid/{cosqa,solidity,sql}/*_test_gen_des.jsonl
-  data/rapid/{cosqa,solidity,sql}/*_test_comment.jsonl
-  data/rapid/{cosqa,solidity,sql}/*_test_gen_code.jsonl
+  {cosqa,solidity,sql}/*_test_gen_des.jsonl
+  {cosqa,solidity,sql}/*_test_comment.jsonl
+
 ```
 
 ### (b) Hybrid Retrieval Ranking
 
 ```
+Input
+  cosqa/cosqa-test-901.json
+  solidity/Solidity.txt
+  sql/batch_0.txt
+  {cosqa,solidity,sql}/*_test_gen_des.jsonl
+  {cosqa,solidity,sql}/*_test_comment.jsonl
+
 Run
   bash scripts/get_embedding_rapid.sh    # -> ./vectors/rapid/
   # set --mode "eval_hrr" in scripts/eval.sh
   bash scripts/eval_rapid.sh
 ```
-
+Output
+  MRR / Top-1 / Top-5 / Top-10 per language
+  
 ### (c) Query Expansion Scoring
 
 ```
+Input
+  cosqa/cosqa-test-901.json
+  solidity/Solidity.txt
+  sql/batch_0.txt
+  {cosqa,solidity,sql}/*_test_gen_des.jsonl
+  {cosqa,solidity,sql}/*_test_comment.jsonl
+
 Run
   bash scripts/get_embedding_rapid.sh
   # set --mode "eval_qes" in scripts/eval.sh
@@ -187,10 +209,21 @@ Output
 ### (d) Reverse Weighted Search
 
 ```
+Input
+  cosqa/code_idx_map.txt, cosqa/cosqa-retrieval-test-500.json
+  solidity/batch_0.txt
+  sql/batch_0.txt
+  {cosqa,solidity,sql}/*_test_comment.jsonl
+  {cosqa,solidity,sql}/*_test_exquery_1_3.jsonl
+
 Run
   bash scripts/get_embedding_rapid.sh
   # set --mode "eval_rws" in scripts/eval.sh
   bash scripts/eval_rapid.sh
+
+Output
+  MRR / Top-1 / Top-5 / Top-10 per language
+
 ```
 
 ### Data Analysis
