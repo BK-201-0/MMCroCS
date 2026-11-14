@@ -175,7 +175,7 @@ def evaluate(args,query2code_scores,query2comment_scores, code2code_scores, gend
         # test different weights
         title = ["MRR", "Top-1", "Top-5", "Top-10"]
         result_table = ResultTable(title)
-        w = [args.w1, args.w2, args.w3, args.w4]
+        w = [args.w1, args.w2, args.w3]
         if gendes2code_scores is not None:
             res = get_results(w[0] * query2code_scores + w[1] * query2comment_scores + w[2] * code2code_scores + w[3] * gendes2code_scores, nl_urls,
                           code_urls)
@@ -393,7 +393,11 @@ if __name__ == '__main__':
                         help="tt")    
     parser.add_argument("--w3", default=None, type=float, 
                         help="tt")
-    parser.add_argument("--w4", default=None, type=float,
+    parser.add_argument("--w21", default=None, type=float,
+                        help="tt")
+    parser.add_argument("--w22", default=None, type=float,
+                        help="tt")
+    parser.add_argument("--w23", default=None, type=float,
                         help="tt")
     
     parser.add_argument("--mode",default=None, type=str,help="eval/traverse", required=True)
@@ -453,6 +457,9 @@ if __name__ == '__main__':
         gendes_bge_embedding = np.load(args.gendes_bge_path)
         gendes_unixcoder_embedding = np.load(args.gendes_unixcoder_path)
 
+        w = [args.w1, args.w2, args.w3, args.w21, args.w22, args.w23]
+
+
         global_query_1 = np.concatenate((query_cocosoda_embedding, query_bge_embedding, query_unixcoder_embedding),
                                         axis=-1)
         global_target_1 = np.concatenate((code_cocosoda_embedding, code_bge_embedding, code_unixcoder_embedding),
@@ -470,7 +477,8 @@ if __name__ == '__main__':
         scores_2 = global_query_2 @ global_target_2.T
         scores_4 = global_query_4 @ global_target_4.T
 
-        scores = scores_1 * 0.65 + scores_2 * 0.25 + scores_4 * 0.10
+        # scores = scores_1 * 0.65 + scores_2 * 0.25 + scores_4 * 0.10
+        scores = scores_1 * w[0] + scores_2 * w[1] + scores_4 * w[2]
         evaluate_g(args, scores)
 
     elif args.mode == "eval_qes":
@@ -489,6 +497,9 @@ if __name__ == '__main__':
         gendes_bge_embedding = np.load(args.gendes_bge_path)
         gendes_unixcoder_embedding = np.load(args.gendes_unixcoder_path)
 
+        w = [args.w1, args.w2, args.w3, args.w21, args.w22, args.w23]
+
+
         global_query_1 = np.concatenate((query_cocosoda_embedding, query_bge_embedding, query_unixcoder_embedding),
                                         axis=-1)
         global_target_1 = np.concatenate((code_cocosoda_embedding, code_bge_embedding, code_unixcoder_embedding),
@@ -506,7 +517,9 @@ if __name__ == '__main__':
         scores_2 = global_query_2 @ global_target_2.T
         scores_4 = global_query_4 @ global_target_4.T
 
-        scores = scores_1 * 0.65 + scores_2 * 0.25 + scores_4 * 0.10
+        # scores = scores_1 * 0.65 + scores_2 * 0.25 + scores_4 * 0.10
+        scores = scores_1 * w[0] + scores_2 * w[1] + scores_4 * w[2]
+
         get_exinfomation(args, scores)
 
     elif args.mode == "eval_rws":
@@ -525,6 +538,8 @@ if __name__ == '__main__':
         exquery_bge_embedding = np.load(args.exquery_bge_path)
         exquery_unixcoder_embedding = np.load(args.exquery_unixcoder_path)
 
+        w = [args.w1, args.w2, args.w3, args.w21, args.w22, args.w23]
+
         global_query_1 = np.concatenate((query_cocosoda_embedding, query_bge_embedding, query_unixcoder_embedding),
                                         axis=-1)
         global_target_1 = np.concatenate((code_cocosoda_embedding, code_bge_embedding, code_unixcoder_embedding),
@@ -540,10 +555,11 @@ if __name__ == '__main__':
         scores_2 = global_query_2 @ global_target_2.T
         scores_5 = global_query_5 @ global_target_5.T
 
-        scores = scores_1 * 0.4 + scores_2 * 0.25 + scores_5 * 0.35
+        # scores = scores_1 * 0.4 + scores_2 * 0.25 + scores_5 * 0.35
+        scores = scores_1 * w[3] + scores_2 * w[4] + scores_5 * w[5]
         get_exrank(args, scores)
 
-    elif args.mode == "eval1":
+    elif args.mode == "eval":
         print("=====evaluating {}=====".format(args.lang))
 
         query_cocosoda_embedding = np.load(args.query_cocosoda_path)
@@ -565,6 +581,7 @@ if __name__ == '__main__':
         exquery_bge_embedding = np.load(args.exquery_bge_path)
         exquery_unixcoder_embedding = np.load(args.exquery_unixcoder_path)
 
+        w = [args.w1, args.w2, args.w3, args.w21, args.w22, args.w23]
 
         global_query_1 = np.concatenate((query_cocosoda_embedding, query_bge_embedding, query_unixcoder_embedding),
                                         axis=-1)
@@ -585,61 +602,10 @@ if __name__ == '__main__':
         scores_4 = global_query_4 @ global_target_4.T
         scores_5 = global_query_5 @ global_target_5.T
 
-        scores = scores_1 * 0.4 + scores_2 * 0.25 + scores_5 * 0.35
+        # scores = scores_1 * w[0] + scores_2 * w[1] + scores_4 * w[2]
+        # scores = scores_1 * 0.4 + scores_2 * 0.25 + scores_5 * 0.35
+        scores = scores_1 * w[3] + scores_2 * w[4] + scores_5 * w[5]
 
         # evaluate(args, scores, None, None)
         # get_example(args, scores)
         get_exrank(args, scores)
-
-    elif args.mode == "eval2":
-        print("=====evaluating {}=====".format(args.lang))
-
-        query_cocosoda_embedding = np.load(args.query_cocosoda_path)
-        code_cocosoda_embedding = np.load(args.code_cocosoda_path)
-        query_bge_embedding = np.load(args.query_bge_path)
-        code_bge_embedding = np.load(args.code_bge_path)
-        query_unixcoder_embedding = np.load(args.query_unixcoder_path)
-        code_unixcoder_embedding = np.load(args.code_unixcoder_path)
-
-        comment_cocosoda_embedding = np.load(args.comment_cocosoda_path)
-        comment_bge_embedding = np.load(args.comment_bge_path)
-        comment_unixcoder_embedding = np.load(args.comment_unixcoder_path)
-
-        gendes_cocosoda_embedding = np.load(args.gendes_cocosoda_path)
-        gendes_bge_embedding = np.load(args.gendes_bge_path)
-        gendes_unixcoder_embedding = np.load(args.gendes_unixcoder_path)
-
-        exquery_cocosoda_embedding = np.load(args.exquery_cocosoda_path)
-        exquery_bge_embedding = np.load(args.exquery_bge_path)
-        exquery_unixcoder_embedding = np.load(args.exquery_unixcoder_path)
-
-        global_query_1 = np.concatenate((query_cocosoda_embedding, query_bge_embedding, query_unixcoder_embedding),
-                                        axis=-1)
-        global_target_1 = np.concatenate((code_cocosoda_embedding, code_bge_embedding, code_unixcoder_embedding),
-                                         axis=-1)
-
-        global_query_2 = np.concatenate((query_bge_embedding, query_bge_embedding, query_bge_embedding), axis=-1)
-        global_target_2 = np.concatenate((comment_bge_embedding, comment_bge_embedding, comment_bge_embedding), axis=-1)
-
-        global_query_4 = np.concatenate(
-            (gendes_cocosoda_embedding, gendes_cocosoda_embedding, gendes_cocosoda_embedding), axis=-1)
-        global_target_4 = np.concatenate((code_cocosoda_embedding, code_cocosoda_embedding, code_cocosoda_embedding),
-                                         axis=-1)
-
-        global_query_5 = np.concatenate(
-            (exquery_cocosoda_embedding, exquery_bge_embedding, exquery_unixcoder_embedding), axis=-1)
-        global_target_5 = np.concatenate((code_cocosoda_embedding, code_bge_embedding, code_unixcoder_embedding),
-                                         axis=-1)
-
-        scores_1 = global_query_1 @ global_target_1.T
-        scores_2 = global_query_2 @ global_target_2.T
-        scores_4 = global_query_4 @ global_target_4.T
-        scores_5 = global_query_5 @ global_target_5.T
-
-        # scores = scores_1 * 0.65 + scores_2 * 0.25 + scores_4 * 0.10 + scores_5 * 0.00
-        scores = scores_1 * 0.55 + scores_2 * 0.26 + scores_4 * 0.00 + scores_5 * 0.19
-
-        # get_exinfomation(args, scores)
-        # evaluate_g(args, scores)
-        get_exrank(args, scores)
-
