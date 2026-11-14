@@ -33,7 +33,7 @@ for lang in "${langs[@]}"; do
         paths+=("$path")  
     done 
     python ./eval.py  \
-        --mode "eval2"    \
+        --mode "eval"    \
         --model_name_or_path $model \
         --eval_batch_size 8 \
         --device cuda \
@@ -65,5 +65,8 @@ for lang in "${langs[@]}"; do
         --output_path "$dir/${lang}" \
         --w1 0.65 \
         --w2 0.25 \
-        --w3 0.10
+        --w3 0.10 \
+        --w21 0.55 \
+        --w22 0.26 \
+        --w23 0.19
 done
