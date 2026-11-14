@@ -26,7 +26,7 @@ for lang in "${langs[@]}"; do
   code_path=${!code_path}
 
   CUDA_VISIBLE_DEVICES="0,2" \
-  python generate_code.py \
+  python generate_comment.py \
       --mode "$MODE" \
       --model_name "$MODEL_NAME" \
       --model_path "$MODEL_PATH" \
