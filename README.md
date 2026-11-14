@@ -144,14 +144,6 @@ Output
 
 Data root: `data/rapid`
 
-The four stages are unchanged. Only three things differ:
-
-| | Cross-Domain | RAPID |
-| --- | --- | --- |
-| Embeddings | `scripts/get_embedding.sh` | `scripts/get_embedding_rapid.sh` |
-| Evaluation | `scripts/eval.sh` | `scripts/eval_rapid.sh` |
-| Test data | `cosqa-retrieval-test-500.json`, `solidity/batch_0.txt`, `sql/batch_0.txt` | `cosqa-test-901.json`, `solidity/Solidity.txt`, `sql/batch_0.txt` |
-
 ### (a) LLM Zero-Shot Generation
 
 ```
@@ -238,4 +230,21 @@ In the file `eval.py`:
 - The `get_example` function obtains the final result data and saves it as a file.
 
 Results at different stages can be obtained by calling various functions.
+
+## Quick Reference
+
+| Script | Purpose |
+| ------ | ------- |
+| `gen_query_code.sh` | query → description |
+| `gen_code_code.sh` | code → comment |
+| `gen_exquery.sh` | further query expansion |
+| `gen_query_rapid.sh` | RAPID generation |
+| `get_embedding.sh` / `get_embedding_rapid.sh` | build embeddings |
+| `eval.sh` / `eval_rapid.sh` | run evaluation |
+
+`eval.py --mode` accepts `eval`, `eval_hrr`, `eval_qes`, `eval_rws`.
+
+## Notes
+- `get_embedding*.sh` hold a **single** `lang` variable (`sql` / `cosqa` / `solidity` / `rust`) — change it and re-run per language.
+- Re-run `get_embedding*.sh` after stage (c); the expanded queries need their own vectors.
 
