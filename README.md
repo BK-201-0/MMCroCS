@@ -56,7 +56,7 @@ Four stages, run in order:
 | (c) | Query Expansion Scoring | score and emit expanded queries |
 | (d) | Reverse Weighted Search | re-rank with the expanded queries |
 
-Stage (a) is optional — generated files are already in `data/`.
+Stage (a) and Stage (c) are optional — the generated files are already in `data/`.
 
 ## (1) Cross-Domain Setting
 
