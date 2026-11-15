@@ -138,7 +138,7 @@ def get_exrank(args, scores):
     result_table.print_table()
 
 def evaluate(args,query2code_scores,query2comment_scores, code2code_scores, gendes2code_scores=None):
-    if args.mode == 'eval':
+    if args.mode == 'eval1':
         assert args.w2 != None and args.w3 != None
 
         query_dataset = TextDataset(args,None,"text",args.query_data_file)
@@ -161,7 +161,7 @@ def evaluate(args,query2code_scores,query2comment_scores, code2code_scores, gend
     
         result_table.add_row(res)
         result_table.print_table()
-    elif args.mode == 'eval1':
+    elif args.mode == 'eval':
         query_dataset = TextDataset(args, None, "text", args.query_data_file)
         code_dataset = TextDataset(args, None, "text", args.code_data_file)
 
