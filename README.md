@@ -247,4 +247,5 @@ Results at different stages can be obtained by calling various functions.
 ## Notes
 - `get_embedding*.sh` hold a **single** `lang` variable (`sql` / `cosqa` / `solidity` / `rust`) — change it and re-run per language.
 - Re-run `get_embedding*.sh` after stage (c); the expanded queries need their own vectors.
+- We provide the final results of our model under different weight configurations in the results folder; see the file `results/MMCroCS.xlsx`.
 
